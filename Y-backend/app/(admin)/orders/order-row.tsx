@@ -294,8 +294,16 @@ const ShippingCell = ({ order }: { order: Order }) => {
             </div>
           )}
           {order.packeta_tracking_number && (
-            <div className="text-xs text-muted-foreground font-mono">
-              {order.packeta_tracking_number}
+            <div className="text-xs font-mono">
+              <a
+                href={`https://www.zasilkovna.cz/sledovani-zasilek?id=${order.packeta_tracking_number}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 hover:underline cursor-pointer"
+                title="Otevřít sledování zásilky"
+              >
+                {order.packeta_tracking_number}
+              </a>
             </div>
           )}
           <div className="mt-1 flex gap-1">
