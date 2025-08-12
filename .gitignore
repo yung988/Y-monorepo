@@ -9,3 +9,10 @@ yarn-error.log*
 .pnp.js
 
 .vscode/*
+.idea/
+
+# Ignore environment files
+.env
+.env.*
+.env*
+!.env.example

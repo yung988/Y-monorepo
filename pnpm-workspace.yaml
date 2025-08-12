@@ -1,0 +1,13 @@
+packages:
+  - 'Y-backend'
+  - 'Y-frontend'
+ignoredBuiltDependencies:
+  - esbuild
+  - sharp
+onlyBuiltDependencies:
+  - '@tailwindcss/oxide'
+  - core-js
+  - esbuild
+  - oxc-resolver
+  - sharp
+  - supabase
