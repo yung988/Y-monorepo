@@ -1,0 +1,12 @@
+# Ignore build and cache artifacts
+.next
+out
+build
+dist
+coverage
+.turbo
+.cache
+storybook-static
+.vercel
+**/*.min.js
+**/*.min.css

@@ -1,0 +1,2334 @@
+Received order data: {
+  "amount": 447900,
+  "currency": "czk",
+  "customerEmail": "test@example.com",
+  "customerName": "Jan Novák",
+  "customerPhone": "123456789",
+  "shippingAddress": {
+    "street": "Václavské náměstí 1",
+    "city": "Praha",
+    "postalCode": "11000"
+  },
+  "packetaPickupPointId": "14135",
+  "packetaPickupPointName": "Z-BOX Olbramkostel, Olbramkostel 140",
+  "packetaPickupPointAddress": "Olbramkostel 140, 671 51 Olbramkostel",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "da8baee5-ca5c-4895-a598-273f7038e134",
+        "variant_id": "undefined-One Size",
+        "quantity": 3,
+        "price": 600
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-M",
+        "quantity": 3,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-XL",
+        "quantity": 1,
+        "price": 650
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "test@example.com-1754248690060-67dybf42p"
+}
+Found existing customer: cus_Sne4Gy0YBxGzsn
+
+> admin-yeezuz2020-store@0.1.0 start /Users/jangajdos/Projects/yeezuz2020.store/backend
+> next start
+
+   ▲ Next.js 15.2.4
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+
+ ✓ Starting...
+ ✓ Ready in 678ms
+
+> admin-yeezuz2020-store@0.1.0 start /Users/jangajdos/Projects/yeezuz2020.store/backend
+> next start
+
+   ▲ Next.js 15.2.4
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+
+ ✓ Starting...
+ ✓ Ready in 445ms
+
+> backend@0.1.0 start /Users/jangajdos/Projects/yeezuz2020.store/backend
+> next start
+
+   ▲ Next.js 15.2.4
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+
+ ✓ Starting...
+ ✓ Ready in 522ms
+Autentizovaný uživatel: yung@yeezuz2020.com
+Autentizovaný uživatel: yung@yeezuz2020.com
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Compiled in 508ms
+ ✓ Ready in 1559ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 898ms
+ GET /api/products 200 in 1845ms
+ GET /api/products 200 in 389ms
+ GET /api/products 200 in 870ms
+ ○ Compiling /api/products/[id] ...
+ ✓ Compiled /api/products/[id] in 592ms
+ GET /api/products/da8baee5-ca5c-4895-a598-273f7038e134 200 in 1384ms
+ GET /api/products 200 in 467ms
+ ○ Compiling /api/stripe/create-payment-intent ...
+ ✓ Compiled /api/stripe/create-payment-intent in 673ms
+ OPTIONS /api/stripe/create-payment-intent 200 in 755ms
+Received order data: {
+  "amount": 567900,
+  "currency": "czk",
+  "customerEmail": "test.zakaznik@yeezuz2020.store",
+  "customerName": "Jan Testovací",
+  "customerPhone": "123456789",
+  "shippingAddress": {
+    "street": "Testovací 123",
+    "city": "Praha",
+    "postalCode": "11000"
+  },
+  "packetaPickupPointId": "14135",
+  "packetaPickupPointName": "Z-BOX Olbramkostel, Olbramkostel 140",
+  "packetaPickupPointAddress": "Olbramkostel 140, 671 51 Olbramkostel",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "da8baee5-ca5c-4895-a598-273f7038e134",
+        "variant_id": "undefined-One Size",
+        "quantity": 5,
+        "price": 600
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-M",
+        "quantity": 3,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-XL",
+        "quantity": 1,
+        "price": 650
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "test.zakaznik@yeezuz2020.store-1754254541373-k1k19ntuh"
+}
+Created new customer: cus_SnkRpiOefE4gn6
+ POST /api/stripe/create-payment-intent 200 in 1994ms
+   Reload env: .env
+   Reload env: .env.local
+   Reload env: .env
+   Reload env: .env.local
+   Reload env: .env.local
+   Reload env: .env
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env
+
+ ✓ Starting...
+ ✓ Compiled in 512ms
+ ✓ Ready in 1658ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 1003ms
+ GET /api/products 200 in 1977ms
+ ○ Compiling /api/stripe/create-payment-intent ...
+ ✓ Compiled /api/stripe/create-payment-intent in 771ms
+ OPTIONS /api/stripe/create-payment-intent 200 in 862ms
+Received order data: {
+  "amount": 567900,
+  "currency": "czk",
+  "customerEmail": "test@example.com",
+  "customerName": "Jan Novák",
+  "customerPhone": "223456789",
+  "shippingAddress": {
+    "street": "Hlavní 123",
+    "city": "Praha",
+    "postalCode": "110 00"
+  },
+  "packetaPickupPointId": "14135",
+  "packetaPickupPointName": "Z-BOX Olbramkostel, Olbramkostel 140",
+  "packetaPickupPointAddress": "Olbramkostel 140, 671 51 Olbramkostel",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "da8baee5-ca5c-4895-a598-273f7038e134",
+        "variant_id": "undefined-One Size",
+        "quantity": 5,
+        "price": 600
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-M",
+        "quantity": 3,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-XL",
+        "quantity": 1,
+        "price": 650
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "test@example.com-1754260357885-0g6er95ec"
+}
+Found existing customer: cus_Sne4Gy0YBxGzsn
+ POST /api/stripe/create-payment-intent 200 in 1402ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env
+
+ ✓ Starting...
+ ✓ Compiled in 438ms
+ ✓ Ready in 1647ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 1409ms
+ GET /api/products 200 in 2529ms
+ GET /api/products 200 in 550ms
+ ○ Compiling /api/products/[id] ...
+ ✓ Compiled /api/products/[id] in 701ms
+ GET /api/products/da8baee5-ca5c-4895-a598-273f7038e134 200 in 1631ms
+ GET /api/products 200 in 248ms
+ ○ Compiling /api/stripe/create-payment-intent ...
+ ✓ Compiled /api/stripe/create-payment-intent in 963ms
+ OPTIONS /api/stripe/create-payment-intent 200 in 1081ms
+Received order data: {
+  "amount": 687900,
+  "currency": "czk",
+  "customerEmail": "test@example.com",
+  "customerName": "Test User",
+  "customerPhone": "123456789",
+  "shippingAddress": {
+    "street": "Testovací ulice 123",
+    "city": "Praha",
+    "postalCode": "12345"
+  },
+  "packetaPickupPointId": "14135",
+  "packetaPickupPointName": "Z-BOX Olbramkostel, Olbramkostel 140",
+  "packetaPickupPointAddress": "Olbramkostel 140, 671 51 Olbramkostel",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "da8baee5-ca5c-4895-a598-273f7038e134",
+        "variant_id": "undefined-One Size",
+        "quantity": 7,
+        "price": 600
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-M",
+        "quantity": 3,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-XL",
+        "quantity": 1,
+        "price": 650
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "test@example.com-1754261316718-mml657q1x"
+}
+Found existing customer: cus_Sne4Gy0YBxGzsn
+ POST /api/stripe/create-payment-intent 200 in 1849ms
+ GET /api/products 200 in 1476ms
+ GET /api/products 200 in 1588ms
+ GET /api/products 200 in 1616ms
+ GET /api/products/da8baee5-ca5c-4895-a598-273f7038e134 200 in 4115ms
+ GET /api/products/da8baee5-ca5c-4895-a598-273f7038e134 200 in 4043ms
+ GET /api/products 200 in 2353ms
+ GET /api/products 200 in 3336ms
+ GET /api/products 200 in 402ms
+ GET /api/products 200 in 377ms
+ GET /api/products 200 in 548ms
+ GET /api/products 200 in 590ms
+ GET /api/products/da8baee5-ca5c-4895-a598-273f7038e134 200 in 2931ms
+ GET /api/products/da8baee5-ca5c-4895-a598-273f7038e134 200 in 2522ms
+ GET /api/products/da8baee5-ca5c-4895-a598-273f7038e134 200 in 2600ms
+ GET /api/products 200 in 2793ms
+ GET /api/products 200 in 1876ms
+ GET /api/products 200 in 1691ms
+ GET /api/products 200 in 734ms
+ GET /api/products 200 in 1375ms
+ GET /api/products/da8baee5-ca5c-4895-a598-273f7038e134 200 in 361ms
+ GET /api/products 200 in 388ms
+ GET /api/products 200 in 387ms
+ GET /api/products 200 in 324ms
+ GET /api/products/da8baee5-ca5c-4895-a598-273f7038e134 200 in 429ms
+ GET /api/products 200 in 385ms
+ GET /api/products 200 in 380ms
+ GET /api/products 200 in 774ms
+ GET /api/products 200 in 305ms
+ GET /api/products 200 in 1763ms
+ GET /api/products 200 in 1860ms
+ GET /api/products 200 in 2309ms
+ GET /api/products/da8baee5-ca5c-4895-a598-273f7038e134 200 in 2924ms
+ GET /api/products/da8baee5-ca5c-4895-a598-273f7038e134 200 in 2777ms
+ GET /api/products 200 in 1977ms
+ GET /api/products 200 in 4013ms
+ GET /api/products/da8baee5-ca5c-4895-a598-273f7038e134 200 in 593ms
+ GET /api/products 200 in 485ms
+ GET /api/products 200 in 673ms
+ GET /api/products 200 in 392ms
+ GET /api/products/da8baee5-ca5c-4895-a598-273f7038e134 200 in 479ms
+ GET /api/products 200 in 469ms
+ GET /api/products 200 in 618ms
+ GET /api/products 200 in 503ms
+ GET /api/products/da8baee5-ca5c-4895-a598-273f7038e134 200 in 527ms
+ GET /api/products 200 in 438ms
+ GET /api/products 200 in 334ms
+ GET /api/products 200 in 333ms
+ GET /api/products 200 in 931ms
+ GET /api/products 200 in 1142ms
+ GET /api/products 200 in 2088ms
+ GET /api/products/da8baee5-ca5c-4895-a598-273f7038e134 200 in 2672ms
+ GET /api/products/da8baee5-ca5c-4895-a598-273f7038e134 200 in 3006ms
+ GET /api/products 200 in 3993ms
+ GET /api/products 200 in 3465ms
+ GET /api/products/da8baee5-ca5c-4895-a598-273f7038e134 200 in 1635ms
+ GET /api/products 200 in 651ms
+ GET /api/products 200 in 917ms
+ GET /api/products 200 in 427ms
+ GET /api/products 200 in 333ms
+ GET /api/products/da8baee5-ca5c-4895-a598-273f7038e134 200 in 999ms
+ GET /api/products 200 in 466ms
+ GET /api/products/da8baee5-ca5c-4895-a598-273f7038e134 200 in 574ms
+ GET /api/products 200 in 767ms
+ GET /api/products 200 in 496ms
+ GET /api/products 200 in 821ms
+ GET /api/products/8e29b39d-6c02-4350-a6da-c968a08d9441 200 in 458ms
+ GET /api/products 200 in 424ms
+ GET /api/products 200 in 324ms
+ GET /api/products/8e29b39d-6c02-4350-a6da-c968a08d9441 200 in 857ms
+ GET /api/products/8e29b39d-6c02-4350-a6da-c968a08d9441 200 in 997ms
+ GET /api/products 200 in 247ms
+ GET /api/products 200 in 292ms
+ GET /api/products/8e29b39d-6c02-4350-a6da-c968a08d9441 200 in 309ms
+ GET /api/products 200 in 492ms
+ GET /api/products 200 in 553ms
+ GET /api/products/8e29b39d-6c02-4350-a6da-c968a08d9441 200 in 642ms
+ GET /api/products 200 in 701ms
+ GET /api/products 200 in 382ms
+ GET /api/products/8e29b39d-6c02-4350-a6da-c968a08d9441 200 in 257ms
+ GET /api/products 200 in 171ms
+ GET /api/products 200 in 433ms
+ GET /api/products/8e29b39d-6c02-4350-a6da-c968a08d9441 200 in 418ms
+ GET /api/products 200 in 267ms
+ GET /api/products 200 in 207ms
+ GET /api/products/8e29b39d-6c02-4350-a6da-c968a08d9441 200 in 496ms
+ GET /api/products 200 in 303ms
+ GET /api/products 200 in 422ms
+ OPTIONS /api/stripe/create-payment-intent 200 in 49ms
+Received order data: {
+  "amount": 187900,
+  "currency": "czk",
+  "customerEmail": "test.customer@example.com",
+  "customerName": "Jan Testovací",
+  "customerPhone": "123456789",
+  "shippingAddress": {
+    "street": "Václavské náměstí 1",
+    "city": "Praha",
+    "postalCode": "11000"
+  },
+  "packetaPickupPointId": "14747",
+  "packetaPickupPointName": "Z-BOX Habry, Sázavská 427",
+  "packetaPickupPointAddress": "Sázavská 427, 582 81 Habry",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "8e29b39d-6c02-4350-a6da-c968a08d9441",
+        "variant_id": "undefined-M",
+        "quantity": 1,
+        "price": 1800
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "test.customer@example.com-1754266693687-jmbk9lgah"
+}
+Created new customer: cus_Snnh4WbMh29pxy
+ POST /api/stripe/create-payment-intent 200 in 1798ms
+ GET /api/products 200 in 648ms
+ GET /api/products/da8baee5-ca5c-4895-a598-273f7038e134 200 in 327ms
+ GET /api/products 200 in 198ms
+ GET /api/products 200 in 205ms
+ OPTIONS /api/stripe/create-payment-intent 200 in 63ms
+Received order data: {
+  "amount": 807900,
+  "currency": "czk",
+  "customerEmail": "test.customer@yeezuz2020.store",
+  "customerName": "Jan Testovací",
+  "customerPhone": "123456789",
+  "shippingAddress": {
+    "street": "Testovací 123",
+    "city": "Praha",
+    "postalCode": "11000"
+  },
+  "packetaPickupPointId": "14135",
+  "packetaPickupPointName": "Z-BOX Olbramkostel, Olbramkostel 140",
+  "packetaPickupPointAddress": "Olbramkostel 140, 671 51 Olbramkostel",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "da8baee5-ca5c-4895-a598-273f7038e134",
+        "variant_id": "undefined-One Size",
+        "quantity": 9,
+        "price": 600
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-M",
+        "quantity": 3,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-XL",
+        "quantity": 1,
+        "price": 650
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "test.customer@yeezuz2020.store-1754267181501-sh21vq6ua"
+}
+Created new customer: cus_Snnq8vJMeZ9igM
+ POST /api/stripe/create-payment-intent 200 in 1686ms
+Autentizovaný uživatel: admin@test.com
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 2.5s
+ GET /admin 404 in 2826ms
+Autentizovaný uživatel: admin@test.com
+Autentizovaný uživatel: admin@test.com
+ ○ Compiling /orders ...
+ ✓ Compiled /orders in 877ms
+ GET /orders 200 in 1339ms
+Autentizovaný uživatel: admin@test.com
+ ○ Compiling /orders/[id] ...
+ ✓ Compiled /orders/[id] in 694ms
+ GET /orders/591c3717-da1d-4bfc-88bc-149597c51105 200 in 1380ms
+Autentizovaný uživatel: admin@test.com
+ ○ Compiling / ...
+ ✓ Compiled / in 723ms
+ GET / 200 in 1489ms
+Autentizovaný uživatel: admin@test.com
+Autentizovaný uživatel: admin@test.com
+Autentizovaný uživatel: admin@test.com
+ GET /orders 200 in 529ms
+ ✓ Compiled /api/orders in 338ms
+ GET /api/orders 308 in 360ms
+ POST /api/orders 405 in 26ms
+ ○ Compiling /api/stripe/webhook ...
+ ✓ Compiled /api/stripe/webhook in 1140ms
+ POST /api/stripe/webhook 400 in 1237ms
+   Reload env: .env.local
+Autentizovaný uživatel: admin@test.com
+ GET /orders 200 in 179ms
+   Reload env: .env.local
+Autentizovaný uživatel: admin@test.com
+ GET /orders 200 in 170ms
+   Reload env: .env
+Autentizovaný uživatel: admin@test.com
+ GET /orders 200 in 161ms
+[?25h
+undefined
+ ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command ".env.local" not found
+undefined
+ ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command ".env.local" not found
+undefined
+ ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command ".env.local" not found
+undefined
+ ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command ".env.local" not found
+undefined
+ ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command ".env.local" not found
+undefined
+ ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command ".env.local" not found
+undefined
+ ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command ".env.local" not found
+undefined
+ ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command ".env.local" not found
+undefined
+ ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command ".env.local" not found
+undefined
+ ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command ".env.local" not found
+undefined
+ ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command ".env.local" not found
+undefined
+ ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command ".env.local" not found
+undefined
+ ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command ".env.local" not found
+undefined
+ ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command ".env.local" not found
+undefined
+ ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command ".env.local" not found
+undefined
+ ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command ".env.local" not found
+undefined
+ ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command ".env.local" not found
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 348ms
+ ✓ Ready in 1218ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 803ms
+ GET /api/products 200 in 1501ms
+ GET /api/products 200 in 479ms
+ ✓ Compiled /api/products/[id] in 348ms
+ GET /api/products/bb6ec0d2-2490-47d2-b65a-b7e23342db1f 200 in 879ms
+ GET /api/products 200 in 403ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 553ms
+ ✓ Ready in 1645ms
+Přesměrování na přihlášení - chyba nebo žádný uživatel: Invalid Refresh Token: Refresh Token Not Found
+ ○ Compiling /auth/signin ...
+ ✓ Compiled /auth/signin in 3.6s
+ GET /auth/signin?redirect=%2F 200 in 4215ms
+Přesměrování na přihlášení - chyba nebo žádný uživatel: Invalid Refresh Token: Refresh Token Not Found
+ GET /auth/signin?height=24&width=24&redirect=%2Fplaceholder.svg 200 in 132ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 1580ms
+ GET /api/products 200 in 2005ms
+Přesměrování na přihlášení - chyba nebo žádný uživatel: Auth session missing!
+ GET /auth/signin?redirect=%2F 200 in 142ms
+Přesměrování na přihlášení - chyba nebo žádný uživatel: Auth session missing!
+ GET /auth/signin?height=24&width=24&redirect=%2Fplaceholder.svg 200 in 239ms
+ GET /api/products 200 in 900ms
+ GET /api/products 200 in 599ms
+ ○ Compiling /api/products/[id] ...
+ ✓ Compiled /api/products/[id] in 800ms
+ GET /api/products/bb6ec0d2-2490-47d2-b65a-b7e23342db1f 200 in 1721ms
+ GET /api/products 200 in 241ms
+ ○ Compiling /api/stripe/create-payment-intent ...
+ ✓ Compiled /api/stripe/create-payment-intent in 706ms
+ OPTIONS /api/stripe/create-payment-intent 200 in 792ms
+Received order data: {
+  "amount": 382900,
+  "currency": "czk",
+  "customerEmail": "jan@test.com",
+  "customerName": "test janek",
+  "customerPhone": "733481280",
+  "shippingAddress": {
+    "street": "Biskupice 72",
+    "city": "Biskucpie 72",
+    "postalCode": "67557"
+  },
+  "packetaPickupPointId": "28255",
+  "packetaPickupPointName": "Z-BOX Znojmo, Přímětická 1813/64",
+  "packetaPickupPointAddress": "Přímětická 1813/64, 669 02 Znojmo",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "8e29b39d-6c02-4350-a6da-c968a08d9441",
+        "variant_id": "undefined-L",
+        "quantity": 1,
+        "price": 1800
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-XL",
+        "quantity": 1,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-L",
+        "quantity": 1,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-M",
+        "quantity": 1,
+        "price": 650
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "jan@test.com-1754274763537-uiicgjmux"
+}
+Created new customer: cus_SnpsvM3dgQFNfG
+ POST /api/stripe/create-payment-intent 200 in 1799ms
+ ○ Compiling /api/stripe/webhook ...
+ ✓ Compiled /api/stripe/webhook in 1825ms
+Unhandled event type: customer.created
+ POST /api/stripe/webhook 200 in 2056ms
+Unhandled event type: payment_intent.created
+ POST /api/stripe/webhook 200 in 1673ms
+Payment succeeded: pi_3RsECiECICPYvq5c0tqMW9l0
+Unhandled event type: charge.succeeded
+ POST /api/stripe/webhook 200 in 146ms
+ POST /api/stripe/webhook 200 in 436ms
+Unhandled event type: charge.updated
+ POST /api/stripe/webhook 200 in 111ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 423ms
+ ✓ Ready in 1688ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 2.6s
+ GET /api/products 200 in 3603ms
+ GET /api/products 200 in 677ms
+ GET /api/products 200 in 578ms
+ ○ Compiling /api/products/slug/[slug] ...
+ ✓ Compiled /api/products/slug/[slug] in 601ms
+ GET /api/products/slug/labute-ss6-rhinestone-crystal-t-shirt 200 in 1489ms
+ GET /api/products 200 in 416ms
+ GET /api/products/slug/labute-track-top-hoodie 200 in 440ms
+ GET /api/products 200 in 236ms
+ GET /api/products 200 in 375ms
+ GET /api/products/slug/labute-track-top-hoodie 200 in 523ms
+ GET /api/products 200 in 435ms
+ GET /api/products 200 in 299ms
+ GET /api/products 200 in 346ms
+ GET /api/products 200 in 362ms
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.0.100:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 295ms
+ ✓ Ready in 1212ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 939ms
+ GET /api/products 200 in 1765ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.0.100:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 344ms
+ ✓ Ready in 1320ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 682ms
+ GET /api/products 200 in 1340ms
+ GET /api/products 200 in 541ms
+ ✓ Compiled /api/products/slug/[slug] in 434ms
+ GET /api/products/slug/labute-ss6-rhinestone-crystal-tie 200 in 1037ms
+ GET /api/products 200 in 369ms
+ GET /api/products 200 in 277ms
+ GET /api/products/slug/labute-ss6-rhinestone-crystal-tie 200 in 296ms
+ GET /api/products 200 in 157ms
+ GET /api/products 200 in 178ms
+ GET /api/products 200 in 662ms
+ GET /api/products/slug/labute-ss6-rhinestone-crystal-tie 200 in 274ms
+ GET /api/products 200 in 181ms
+ GET /api/products 200 in 235ms
+ GET /api/products 200 in 210ms
+ GET /api/products 200 in 399ms
+ GET /api/products/slug/labute-ss6-rhinestone-crystal-tie 200 in 302ms
+ GET /api/products 200 in 370ms
+ GET /api/products 200 in 389ms
+ GET /api/products 200 in 204ms
+ GET /api/products 200 in 409ms
+ GET /api/products 200 in 230ms
+ GET /api/products 200 in 225ms
+ GET /api/products/slug/labute-ss6-rhinestone-crystal-t-shirt 200 in 520ms
+ GET /api/products 200 in 162ms
+ GET /api/products 200 in 221ms
+ GET /api/products 200 in 276ms
+ GET /api/products/slug/labute-track-top-hoodie 200 in 250ms
+ GET /api/products 200 in 194ms
+ GET /api/products 200 in 248ms
+ GET /api/products 200 in 185ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.1.5:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 226ms
+ ✓ Ready in 961ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 546ms
+ GET /api/products 200 in 1329ms
+ GET /api/products 200 in 598ms
+ ○ Compiling /api/products/slug/[slug] ...
+ ✓ Compiled /api/products/slug/[slug] in 1271ms
+ GET /api/products/slug/labute-ss6-rhinestone-crystal-tie 200 in 2321ms
+ GET /api/products 200 in 228ms
+ GET /api/products 200 in 393ms
+ GET /api/products/slug/labute-throwback-polo-t-shirt 200 in 492ms
+ GET /api/products 200 in 456ms
+ GET /api/products 200 in 233ms
+ GET /api/products/slug/labute-ss6-rhinestone-crystal-tie 200 in 643ms
+ GET /api/products 200 in 277ms
+ GET /api/products 200 in 219ms
+ GET /api/products 200 in 453ms
+ GET /api/products 200 in 410ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.1.5:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 308ms
+ ✓ Ready in 1080ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 525ms
+ GET /api/products 200 in 1207ms
+ GET /api/products 200 in 459ms
+ ✓ Compiled /api/products/slug/[slug] in 375ms
+ GET /api/products/slug/labute-ss6-rhinestone-crystal-tie 200 in 1168ms
+ GET /api/products 200 in 486ms
+ ○ Compiling /api/stripe/create-payment-intent ...
+ ✓ Compiled /api/stripe/create-payment-intent in 528ms
+ OPTIONS /api/stripe/create-payment-intent 200 in 581ms
+Received order data: {
+  "amount": 1057900,
+  "currency": "czk",
+  "customerEmail": "test@example.com",
+  "customerName": "Jan Novák",
+  "customerPhone": "777123456",
+  "shippingAddress": {
+    "street": "Václavské náměstí 1",
+    "city": "Praha",
+    "postalCode": "110 00"
+  },
+  "packetaPickupPointId": "14135",
+  "packetaPickupPointName": "Z-BOX Olbramkostel, Olbramkostel 140",
+  "packetaPickupPointAddress": "Olbramkostel 140, 671 51 Olbramkostel",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "da8baee5-ca5c-4895-a598-273f7038e134",
+        "variant_id": "undefined-One Size",
+        "quantity": 11,
+        "price": 600
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-M",
+        "quantity": 5,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-XL",
+        "quantity": 1,
+        "price": 650
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "test@example.com-1754281530114-cc9ac0hpr"
+}
+Found existing customer: cus_Sne4Gy0YBxGzsn
+ POST /api/stripe/create-payment-intent 200 in 1119ms
+ ○ Compiling /api/stripe/webhook ...
+ ✓ Compiled /api/stripe/webhook in 698ms
+Unhandled event type: payment_intent.created
+ POST /api/stripe/webhook 200 in 778ms
+Payment succeeded: pi_3RsFxnECICPYvq5c14A4PFGk
+Unhandled event type: charge.succeeded
+ POST /api/stripe/webhook 200 in 44ms
+ POST /api/stripe/webhook 200 in 414ms
+Unhandled event type: charge.updated
+ POST /api/stripe/webhook 200 in 26ms
+ GET /api/products 200 in 469ms
+ GET /api/products/slug/labute-track-top-hoodie 200 in 307ms
+ GET /api/products 200 in 185ms
+ GET /api/products 200 in 409ms
+ OPTIONS /api/stripe/create-payment-intent 200 in 164ms
+Received order data: {
+  "amount": 1237900,
+  "currency": "czk",
+  "customerEmail": "marie.svoboda@seznam.cz",
+  "customerName": "Marie Novák",
+  "customerPhone": "+420123456789",
+  "shippingAddress": {
+    "street": "Hlavní 123",
+    "city": "Praha",
+    "postalCode": "110 00"
+  },
+  "packetaPickupPointId": "14135",
+  "packetaPickupPointName": "Z-BOX Olbramkostel, Olbramkostel 140",
+  "packetaPickupPointAddress": "Olbramkostel 140, 671 51 Olbramkostel",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "da8baee5-ca5c-4895-a598-273f7038e134",
+        "variant_id": "undefined-One Size",
+        "quantity": 11,
+        "price": 600
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-M",
+        "quantity": 5,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-XL",
+        "quantity": 1,
+        "price": 650
+      },
+      {
+        "product_id": "8e29b39d-6c02-4350-a6da-c968a08d9441",
+        "variant_id": "9dbef62f-14df-4275-9262-640be258c05c-M",
+        "quantity": 1,
+        "price": 1800
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "marie.svoboda@seznam.cz-1754282189876-abt516psx"
+}
+Created new customer: cus_Snrs9Yi0FvZQUj
+Unhandled event type: customer.created
+ POST /api/stripe/webhook 200 in 25ms
+Created order with ID: ebf52376-a7ce-452b-9138-53f6940dbcb9
+ POST /api/stripe/create-payment-intent 200 in 1411ms
+Unhandled event type: payment_intent.created
+ POST /api/stripe/webhook 200 in 68ms
+ OPTIONS /api/stripe/create-payment-intent 200 in 154ms
+Received order data: {
+  "amount": 1237900,
+  "currency": "czk",
+  "customerEmail": "marie.svoboda@seznam.cz",
+  "customerName": "Marie Novák",
+  "customerPhone": "+420123456789",
+  "shippingAddress": {
+    "street": "Hlavní 123",
+    "city": "Praha",
+    "postalCode": "110 00"
+  },
+  "packetaPickupPointId": "14135",
+  "packetaPickupPointName": "Z-BOX Olbramkostel, Olbramkostel 140",
+  "packetaPickupPointAddress": "Olbramkostel 140, 671 51 Olbramkostel",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "da8baee5-ca5c-4895-a598-273f7038e134",
+        "variant_id": "undefined-One Size",
+        "quantity": 11,
+        "price": 600
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-M",
+        "quantity": 5,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-XL",
+        "quantity": 1,
+        "price": 650
+      },
+      {
+        "product_id": "8e29b39d-6c02-4350-a6da-c968a08d9441",
+        "variant_id": "9dbef62f-14df-4275-9262-640be258c05c-M",
+        "quantity": 1,
+        "price": 1800
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "marie.svoboda@seznam.cz-1754282189876-abt516psx"
+}
+Found existing order with idempotency key: marie.svoboda@seznam.cz-1754282189876-abt516psx
+ POST /api/stripe/create-payment-intent 200 in 854ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.1.5:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 301ms
+ ✓ Ready in 1112ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.1.5:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 320ms
+ ✓ Ready in 1103ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.1.5:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 342ms
+ ✓ Ready in 1164ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.1.5:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 234ms
+ ✓ Ready in 1003ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 741ms
+ GET /api/products 200 in 1516ms
+ GET /api/products 200 in 244ms
+ ○ Compiling /api/products/slug/[slug] ...
+ ✓ Compiled /api/products/slug/[slug] in 516ms
+ GET /api/products/slug/labute-ss6-rhinestone-crystal-tie 200 in 1085ms
+ GET /api/products 200 in 213ms
+ GET /api/products/slug/labute-ss6-rhinestone-crystal-tie 200 in 496ms
+ ✓ Compiled middleware in 14ms
+ ✓ Compiled in 16ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.1.5:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 235ms
+ ✓ Ready in 967ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 542ms
+ GET /api/products 200 in 1068ms
+ GET /api/products 200 in 248ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.1.5:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 361ms
+ ✓ Ready in 1177ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 565ms
+ GET /api/products 200 in 1406ms
+ GET /api/products 200 in 298ms
+ ✓ Compiled /api/products/slug/[slug] in 486ms
+ GET /api/products 200 in 412ms
+ GET /api/products/slug/labute-ss6-rhinestone-crystal-tie 200 in 1071ms
+ GET /api/products 200 in 376ms
+ ○ Compiling /api/stripe/create-payment-intent ...
+ ✓ Compiled /api/stripe/create-payment-intent in 526ms
+ OPTIONS /api/stripe/create-payment-intent 200 in 584ms
+Received order data: {
+  "amount": 1357900,
+  "currency": "czk",
+  "customerEmail": "test@example.com",
+  "customerName": "Jan Novák",
+  "customerPhone": "777123456",
+  "shippingAddress": {
+    "street": "Václavské náměstí 1",
+    "city": "Praha",
+    "postalCode": "11000"
+  },
+  "packetaPickupPointId": "14135",
+  "packetaPickupPointName": "Z-BOX Olbramkostel, Olbramkostel 140",
+  "packetaPickupPointAddress": "Olbramkostel 140, 671 51 Olbramkostel",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "da8baee5-ca5c-4895-a598-273f7038e134",
+        "variant_id": "undefined-One Size",
+        "quantity": 13,
+        "price": 600
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-M",
+        "quantity": 5,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-XL",
+        "quantity": 1,
+        "price": 650
+      },
+      {
+        "product_id": "8e29b39d-6c02-4350-a6da-c968a08d9441",
+        "variant_id": "9dbef62f-14df-4275-9262-640be258c05c-M",
+        "quantity": 1,
+        "price": 1800
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "test@example.com-1754283162724-g4t15s8t6"
+}
+Found existing customer: cus_Sne4Gy0YBxGzsn
+Data returned from DB after insert: {
+  "id": "4e554f7f-6248-4b77-9846-a7a63aed79e7",
+  "access_token": null
+}
+Created order with ID: 4e554f7f-6248-4b77-9846-a7a63aed79e7
+ POST /api/stripe/create-payment-intent 200 in 1487ms
+ ○ Compiling /api/stripe/webhook ...
+ ✓ Compiled /api/stripe/webhook in 656ms
+Unhandled event type: payment_intent.created
+ POST /api/stripe/webhook 200 in 719ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.1.5:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 287ms
+ ✓ Ready in 1036ms
+ ○ Compiling /api/stripe/create-payment-intent ...
+ ✓ Compiled /api/stripe/create-payment-intent in 777ms
+ OPTIONS /api/stripe/create-payment-intent 200 in 951ms
+Received order data: {
+  "amount": 1357900,
+  "currency": "czk",
+  "customerEmail": "test@example.com",
+  "customerName": "Jan Novák",
+  "customerPhone": "777123456",
+  "shippingAddress": {
+    "street": "Václavské náměstí 1",
+    "city": "Praha",
+    "postalCode": "11000"
+  },
+  "packetaPickupPointId": "14135",
+  "packetaPickupPointName": "Z-BOX Olbramkostel, Olbramkostel 140",
+  "packetaPickupPointAddress": "Olbramkostel 140, 671 51 Olbramkostel",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "da8baee5-ca5c-4895-a598-273f7038e134",
+        "variant_id": "undefined-One Size",
+        "quantity": 13,
+        "price": 600
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-M",
+        "quantity": 5,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "variant_id": "undefined-XL",
+        "quantity": 1,
+        "price": 650
+      },
+      {
+        "product_id": "8e29b39d-6c02-4350-a6da-c968a08d9441",
+        "variant_id": "9dbef62f-14df-4275-9262-640be258c05c-M",
+        "quantity": 1,
+        "price": 1800
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "test@example.com-1754283328599-4q6hy4tqv"
+}
+Found existing customer: cus_Sne4Gy0YBxGzsn
+Data returned from DB after insert: {
+  "id": "f335d02c-d4d9-454d-900d-776e3cebf1d4",
+  "access_token": null
+}
+Created order with ID: f335d02c-d4d9-454d-900d-776e3cebf1d4
+ POST /api/stripe/create-payment-intent 500 in 1643ms
+ ○ Compiling /api/stripe/webhook ...
+ ✓ Compiled /api/stripe/webhook in 720ms
+Unhandled event type: payment_intent.created
+ POST /api/stripe/webhook 200 in 797ms
+ OPTIONS /api/stripe/create-payment-intent 200 in 118ms
+Received order data: {
+  "amount": 1357900,
+  "currency": "czk",
+  "customerEmail": "test@example.com",
+  "customerName": "Jan Novák",
+  "customerPhone": "777123456",
+  "shippingAddress": {
+    "street": "Václavské náměstí 1",
+    "city": "Praha",
+    "postalCode": "11000"
+  },
+  "packetaPickupPointId": "14135",
+  "packetaPickupPointName": "Z-BOX Olbramkostel, Olbramkostel 140",
+  "packetaPickupPointAddress": "Olbramkostel 140, 671 51 Olbramkostel",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "da8baee5-ca5c-4895-a598-273f7038e134",
+        "quantity": 13,
+        "price": 600
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "quantity": 5,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "quantity": 1,
+        "price": 650
+      },
+      {
+        "product_id": "8e29b39d-6c02-4350-a6da-c968a08d9441",
+        "variant_id": "9dbef62f-14df-4275-9262-640be258c05c",
+        "quantity": 1,
+        "price": 1800
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "test@example.com-1754283328599-4q6hy4tqv"
+}
+Found existing customer: cus_Sne4Gy0YBxGzsn
+Data returned from DB after insert: {
+  "id": "b1fbb82c-6028-41ce-8d80-9c2440cd493e",
+  "access_token": null
+}
+Created order with ID: b1fbb82c-6028-41ce-8d80-9c2440cd493e
+Unhandled event type: payment_intent.created
+ POST /api/stripe/webhook 200 in 23ms
+ POST /api/stripe/create-payment-intent 200 in 1545ms
+ OPTIONS /api/stripe/create-payment-intent 200 in 27ms
+Received order data: {
+  "amount": 1357900,
+  "currency": "czk",
+  "customerEmail": "test@example.com",
+  "customerName": "Jan Novák",
+  "customerPhone": "777123456",
+  "shippingAddress": {
+    "street": "Václavské náměstí 1",
+    "city": "Praha",
+    "postalCode": "11000"
+  },
+  "packetaPickupPointId": "14135",
+  "packetaPickupPointName": "Z-BOX Olbramkostel, Olbramkostel 140",
+  "packetaPickupPointAddress": "Olbramkostel 140, 671 51 Olbramkostel",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "da8baee5-ca5c-4895-a598-273f7038e134",
+        "quantity": 13,
+        "price": 600
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "quantity": 5,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "quantity": 1,
+        "price": 650
+      },
+      {
+        "product_id": "8e29b39d-6c02-4350-a6da-c968a08d9441",
+        "variant_id": "9dbef62f-14df-4275-9262-640be258c05c",
+        "quantity": 1,
+        "price": 1800
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "test@example.com-1754283960350-bw9v33st9"
+}
+Found existing customer: cus_Sne4Gy0YBxGzsn
+Data returned from DB after insert: {
+  "id": "c1f00c6d-27fc-4e50-8e3f-9f6bfc5d9249",
+  "access_token": null
+}
+Created order with ID: c1f00c6d-27fc-4e50-8e3f-9f6bfc5d9249
+Unhandled event type: payment_intent.created
+ POST /api/stripe/webhook 200 in 21ms
+ POST /api/stripe/create-payment-intent 200 in 1412ms
+ OPTIONS /api/stripe/create-payment-intent 200 in 46ms
+Received order data: {
+  "amount": 1357900,
+  "currency": "czk",
+  "customerEmail": "admin@test.com",
+  "customerName": "Jan Novák",
+  "customerPhone": "123456789",
+  "shippingAddress": {
+    "street": "Hlavní 123",
+    "city": "Praha",
+    "postalCode": "10000"
+  },
+  "packetaPickupPointId": "14135",
+  "packetaPickupPointName": "Z-BOX Olbramkostel, Olbramkostel 140",
+  "packetaPickupPointAddress": "Olbramkostel 140, 671 51 Olbramkostel",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "da8baee5-ca5c-4895-a598-273f7038e134",
+        "quantity": 13,
+        "price": 600
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "quantity": 5,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "quantity": 1,
+        "price": 650
+      },
+      {
+        "product_id": "8e29b39d-6c02-4350-a6da-c968a08d9441",
+        "variant_id": "9dbef62f-14df-4275-9262-640be258c05c",
+        "quantity": 1,
+        "price": 1800
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "admin@test.com-1754285596359-tkmhd9iuy"
+}
+Created new customer: cus_Snsm1kgMsoOcVW
+Unhandled event type: customer.created
+ POST /api/stripe/webhook 200 in 24ms
+Unhandled event type: payment_intent.created
+ POST /api/stripe/webhook 200 in 22ms
+Data returned from DB after insert: {
+  "id": "dfff852a-d5ce-4728-9aac-6e187706ef41",
+  "access_token": null
+}
+Created order with ID: dfff852a-d5ce-4728-9aac-6e187706ef41
+ POST /api/stripe/create-payment-intent 200 in 2374ms
+ OPTIONS /api/stripe/create-payment-intent 200 in 31ms
+Received order data: {
+  "amount": 1357900,
+  "currency": "czk",
+  "customerEmail": "admin@test.com",
+  "customerName": "Jan Novák",
+  "customerPhone": "123456789",
+  "shippingAddress": {
+    "street": "Hlavní 123",
+    "city": "Praha",
+    "postalCode": "10000"
+  },
+  "packetaPickupPointId": "14135",
+  "packetaPickupPointName": "Z-BOX Olbramkostel, Olbramkostel 140",
+  "packetaPickupPointAddress": "Olbramkostel 140, 671 51 Olbramkostel",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "da8baee5-ca5c-4895-a598-273f7038e134",
+        "quantity": 13,
+        "price": 600
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "quantity": 5,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "quantity": 1,
+        "price": 650
+      },
+      {
+        "product_id": "8e29b39d-6c02-4350-a6da-c968a08d9441",
+        "variant_id": "9dbef62f-14df-4275-9262-640be258c05c",
+        "quantity": 1,
+        "price": 1800
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "admin@test.com-1754285596359-tkmhd9iuy"
+}
+Found existing order with idempotency key: admin@test.com-1754285596359-tkmhd9iuy
+ POST /api/stripe/create-payment-intent 200 in 815ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.1.5:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 297ms
+ ✓ Ready in 1058ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 229ms
+ ✓ Ready in 1004ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 573ms
+ GET /api/products 200 in 1747ms
+ GET /api/products 200 in 609ms
+ ✓ Compiled /api/products/slug/[slug] in 484ms
+ GET /api/products/slug/labute-ss6-rhinestone-crystal-tie 200 in 1335ms
+ GET /api/products 200 in 391ms
+ ○ Compiling /api/stripe/create-payment-intent ...
+ ✓ Compiled /api/stripe/create-payment-intent in 541ms
+ OPTIONS /api/stripe/create-payment-intent 200 in 604ms
+Received order data: {
+  "amount": 1477900,
+  "currency": "czk",
+  "customerEmail": "test@example.com",
+  "customerName": "Jan Novák",
+  "customerPhone": "777888999",
+  "shippingAddress": {
+    "street": "Václavské náměstí 1",
+    "city": "Praha",
+    "postalCode": "11000"
+  },
+  "packetaPickupPointId": "14135",
+  "packetaPickupPointName": "Z-BOX Olbramkostel, Olbramkostel 140",
+  "packetaPickupPointAddress": "Olbramkostel 140, 671 51 Olbramkostel",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "da8baee5-ca5c-4895-a598-273f7038e134",
+        "quantity": 15,
+        "price": 600
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "quantity": 5,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "quantity": 1,
+        "price": 650
+      },
+      {
+        "product_id": "8e29b39d-6c02-4350-a6da-c968a08d9441",
+        "variant_id": "9dbef62f-14df-4275-9262-640be258c05c",
+        "quantity": 1,
+        "price": 1800
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "test@example.com-1754320830213-8qupg64pf"
+}
+Found existing customer: cus_Sne4Gy0YBxGzsn
+🔧 Generating access token: e26d81d5-d9df-45a9-b35c-a52d63775a16
+🔧 Inserting order with service role key...
+🔧 Database response: {
+  order: {
+    id: 'd3d3011f-03fa-42a8-a332-ce4430dd8fa2',
+    access_token: 'e26d81d5-d9df-45a9-b35c-a52d63775a16'
+  },
+  orderError: null
+}
+✅ Data returned from DB after insert: {
+  "id": "d3d3011f-03fa-42a8-a332-ce4430dd8fa2",
+  "access_token": "e26d81d5-d9df-45a9-b35c-a52d63775a16"
+}
+✅ Created order with ID: d3d3011f-03fa-42a8-a332-ce4430dd8fa2
+ ✓ Compiled /api/stripe/webhook in 499ms
+Unhandled event type: payment_intent.created
+ POST /api/stripe/webhook 200 in 554ms
+✅ Order items inserted successfully
+🔧 Final response data: {
+  clientSecret: true,
+  paymentIntentId: 'pi_3RsQBgECICPYvq5c1C3I67r2',
+  orderId: 'd3d3011f-03fa-42a8-a332-ce4430dd8fa2',
+  accessToken: 'e26d81d5-d9df-45a9-b35c-a52d63775a16'
+}
+ POST /api/stripe/create-payment-intent 200 in 2570ms
+ GET /api/products 200 in 921ms
+ GET /api/products/slug/labute-ss6-rhinestone-crystal-tie 200 in 403ms
+ GET /api/products 200 in 263ms
+ GET /api/products 200 in 451ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 302ms
+ ✓ Ready in 1124ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 363ms
+ ✓ Ready in 1289ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 837ms
+ GET /api/products 200 in 1767ms
+ GET /api/products 200 in 552ms
+ ✓ Compiled /api/products/slug/[slug] in 451ms
+ GET /api/products/slug/labute-ss6-rhinestone-crystal-tie 200 in 1024ms
+ GET /api/products 200 in 442ms
+ ○ Compiling /api/stripe/create-payment-intent ...
+ ✓ Compiled /api/stripe/create-payment-intent in 657ms
+ OPTIONS /api/stripe/create-payment-intent 200 in 721ms
+Received order data: {
+  "amount": 1717900,
+  "currency": "czk",
+  "customerEmail": "test.user@example.com",
+  "customerName": "Jan Gajdoš",
+  "customerPhone": "777888999",
+  "shippingAddress": {
+    "street": "Václavská 123",
+    "city": "Praha",
+    "postalCode": "11000"
+  },
+  "packetaPickupPointId": "14135",
+  "packetaPickupPointName": "Z-BOX Olbramkostel, Olbramkostel 140",
+  "packetaPickupPointAddress": "Olbramkostel 140, 671 51 Olbramkostel",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "da8baee5-ca5c-4895-a598-273f7038e134",
+        "quantity": 19,
+        "price": 600
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "quantity": 5,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "quantity": 1,
+        "price": 650
+      },
+      {
+        "product_id": "8e29b39d-6c02-4350-a6da-c968a08d9441",
+        "variant_id": "9dbef62f-14df-4275-9262-640be258c05c",
+        "quantity": 1,
+        "price": 1800
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "test.user@example.com-1754325143528-ljutbchml"
+}
+Created new customer: cus_So3QRuhZTSNQJX
+🔧 Generating access token: 23f3ac07-77cb-4903-899b-f731955d7d7d
+🔧 Inserting order with service role key...
+ ○ Compiling /api/stripe/webhook ...
+ ✓ Compiled /api/stripe/webhook in 530ms
+🔧 Database response: {
+  order: {
+    id: 'b5987456-ea0f-42e1-818c-c5d3201e0a82',
+    access_token: '23f3ac07-77cb-4903-899b-f731955d7d7d'
+  },
+  orderError: null
+}
+✅ Data returned from DB after insert: {
+  "id": "b5987456-ea0f-42e1-818c-c5d3201e0a82",
+  "access_token": "23f3ac07-77cb-4903-899b-f731955d7d7d"
+}
+✅ Created order with ID: b5987456-ea0f-42e1-818c-c5d3201e0a82
+Unhandled event type: payment_intent.created
+ POST /api/stripe/webhook 200 in 211ms
+Unhandled event type: customer.created
+ POST /api/stripe/webhook 200 in 595ms
+✅ Order items inserted successfully
+🔧 Final response data: {
+  clientSecret: true,
+  paymentIntentId: 'pi_3RsRJFECICPYvq5c1Z54gBbc',
+  orderId: 'b5987456-ea0f-42e1-818c-c5d3201e0a82',
+  accessToken: '23f3ac07-77cb-4903-899b-f731955d7d7d'
+}
+ POST /api/stripe/create-payment-intent 200 in 2363ms
+Unhandled event type: charge.succeeded
+ POST /api/stripe/webhook 200 in 176ms
+Payment succeeded: pi_3RsRJFECICPYvq5c1Z54gBbc
+ POST /api/stripe/webhook 200 in 940ms
+Unhandled event type: charge.updated
+ POST /api/stripe/webhook 200 in 90ms
+ ○ Compiling /api/orders/[id] ...
+ ✓ Compiled /api/orders/[id] in 1238ms
+ GET /api/orders/b5987456-ea0f-42e1-818c-c5d3201e0a82?token=23f3ac07-77cb-4903-899b-f731955d7d7d 200 in 2583ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 382ms
+ ✓ Ready in 1400ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 632ms
+ GET /api/products 200 in 1309ms
+ GET /api/products 200 in 1487ms
+ GET /api/products 200 in 1507ms
+ GET /api/products 200 in 573ms
+ GET /api/products 200 in 357ms
+ ✓ Compiled /api/products/slug/[slug] in 427ms
+ GET /api/products/slug/labute-ss6-rhinestone-crystal-tie 200 in 1050ms
+ GET /api/products 200 in 213ms
+ ○ Compiling /api/stripe/create-payment-intent ...
+ ✓ Compiled /api/stripe/create-payment-intent in 590ms
+ OPTIONS /api/stripe/create-payment-intent 200 in 660ms
+Received order data: {
+  "amount": 1837900,
+  "currency": "czk",
+  "customerEmail": "test.user2@example.com",
+  "customerName": "Jan Gajdoš",
+  "customerPhone": "777888999",
+  "shippingAddress": {
+    "street": "Václavská 123",
+    "city": "Praha",
+    "postalCode": "11000"
+  },
+  "packetaPickupPointId": "14135",
+  "packetaPickupPointName": "Z-BOX Olbramkostel, Olbramkostel 140",
+  "packetaPickupPointAddress": "Olbramkostel 140, 671 51 Olbramkostel",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "da8baee5-ca5c-4895-a598-273f7038e134",
+        "quantity": 21,
+        "price": 600
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "quantity": 5,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "quantity": 1,
+        "price": 650
+      },
+      {
+        "product_id": "8e29b39d-6c02-4350-a6da-c968a08d9441",
+        "variant_id": "9dbef62f-14df-4275-9262-640be258c05c",
+        "quantity": 1,
+        "price": 1800
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "test.user2@example.com-1754325691662-argpcxxvo"
+}
+Created new customer: cus_So3ZTWtji8a8Es
+🔧 Generating access token: 94985660-dc50-4823-8946-f919b55a58d1
+🔧 Inserting order with service role key...
+🔧 Database response: {
+  order: {
+    id: 'ee50d2c8-3196-41ec-b8b0-3add743a3c2a',
+    access_token: '94985660-dc50-4823-8946-f919b55a58d1'
+  },
+  orderError: null
+}
+✅ Data returned from DB after insert: {
+  "id": "ee50d2c8-3196-41ec-b8b0-3add743a3c2a",
+  "access_token": "94985660-dc50-4823-8946-f919b55a58d1"
+}
+✅ Created order with ID: ee50d2c8-3196-41ec-b8b0-3add743a3c2a
+✅ Order items inserted successfully
+🔧 Final response data: {
+  clientSecret: true,
+  paymentIntentId: 'pi_3RsRS6ECICPYvq5c0KxE1wtV',
+  orderId: 'ee50d2c8-3196-41ec-b8b0-3add743a3c2a',
+  accessToken: '94985660-dc50-4823-8946-f919b55a58d1'
+}
+ POST /api/stripe/create-payment-intent 200 in 2155ms
+ ○ Compiling /api/stripe/webhook ...
+ ✓ Compiled /api/stripe/webhook in 528ms
+Unhandled event type: payment_intent.created
+ POST /api/stripe/webhook 200 in 275ms
+Unhandled event type: customer.created
+ POST /api/stripe/webhook 200 in 635ms
+Payment succeeded: pi_3RsRS6ECICPYvq5c0KxE1wtV
+Unhandled event type: charge.succeeded
+ POST /api/stripe/webhook 200 in 79ms
+ POST /api/stripe/webhook 200 in 340ms
+Unhandled event type: charge.updated
+ POST /api/stripe/webhook 200 in 76ms
+ ○ Compiling /api/orders/[id] ...
+ ✓ Compiled /api/orders/[id] in 684ms
+ GET /api/orders/ee50d2c8-3196-41ec-b8b0-3add743a3c2a?token=94985660-dc50-4823-8946-f919b55a58d1 200 in 2092ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 311ms
+ ✓ Ready in 1132ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 555ms
+ GET /api/products 200 in 1390ms
+ GET /api/products 200 in 336ms
+ ○ Compiling /api/products/slug/[slug] ...
+ ✓ Compiled /api/products/slug/[slug] in 511ms
+ GET /api/products/slug/labute-ss6-rhinestone-crystal-tie 200 in 1080ms
+ GET /api/products 200 in 214ms
+ ○ Compiling /api/stripe/create-payment-intent ...
+ ✓ Compiled /api/stripe/create-payment-intent in 583ms
+ OPTIONS /api/stripe/create-payment-intent 200 in 648ms
+Received order data: {
+  "amount": 1957900,
+  "currency": "czk",
+  "customerEmail": "test@example.com",
+  "customerName": "Test User",
+  "customerPhone": "777777777",
+  "shippingAddress": {
+    "street": "Ulice 1",
+    "city": "Praha",
+    "postalCode": "11000"
+  },
+  "packetaPickupPointId": "14135",
+  "packetaPickupPointName": "Z-BOX Olbramkostel, Olbramkostel 140",
+  "packetaPickupPointAddress": "Olbramkostel 140, 671 51 Olbramkostel",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "da8baee5-ca5c-4895-a598-273f7038e134",
+        "quantity": 23,
+        "price": 600
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "quantity": 5,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "quantity": 1,
+        "price": 650
+      },
+      {
+        "product_id": "8e29b39d-6c02-4350-a6da-c968a08d9441",
+        "variant_id": "9dbef62f-14df-4275-9262-640be258c05c",
+        "quantity": 1,
+        "price": 1800
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "test@example.com-1754326274373-5847qtebj"
+}
+Found existing customer: cus_Sne4Gy0YBxGzsn
+🔧 Generating access token: 31286e98-6d90-482f-a836-43424b60fb52
+🔧 Inserting order with service role key...
+🔧 Database response: {
+  order: {
+    id: '8054728e-4d36-4606-b67e-25c83e1b4519',
+    access_token: '31286e98-6d90-482f-a836-43424b60fb52'
+  },
+  orderError: null
+}
+✅ Data returned from DB after insert: {
+  "id": "8054728e-4d36-4606-b67e-25c83e1b4519",
+  "access_token": "31286e98-6d90-482f-a836-43424b60fb52"
+}
+✅ Created order with ID: 8054728e-4d36-4606-b67e-25c83e1b4519
+✅ Order items inserted successfully
+🔧 Final response data: {
+  clientSecret: true,
+  paymentIntentId: 'pi_3RsRbUECICPYvq5c0xFzsK6h',
+  orderId: '8054728e-4d36-4606-b67e-25c83e1b4519',
+  accessToken: '31286e98-6d90-482f-a836-43424b60fb52'
+}
+ POST /api/stripe/create-payment-intent 200 in 1616ms
+ ○ Compiling /api/stripe/webhook ...
+ ✓ Compiled /api/stripe/webhook in 647ms
+Unhandled event type: payment_intent.created
+ POST /api/stripe/webhook 200 in 708ms
+Payment succeeded: pi_3RsRbUECICPYvq5c0xFzsK6h
+Unhandled event type: charge.succeeded
+ POST /api/stripe/webhook 200 in 40ms
+ POST /api/stripe/webhook 200 in 491ms
+ ✓ Compiled /api/orders/[id] in 408ms
+ GET /api/orders/8054728e-4d36-4606-b67e-25c83e1b4519?token=31286e98-6d90-482f-a836-43424b60fb52 200 in 1130ms
+Unhandled event type: charge.updated
+ POST /api/stripe/webhook 200 in 27ms
+ GET /api/products 200 in 736ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 340ms
+ ✓ Ready in 1168ms
+ ○ Compiling /api/orders/[id] ...
+ ✓ Compiled /api/orders/[id] in 708ms
+ GET /api/orders/8054728e-4d36-4606-b67e-25c83e1b4519?token=31286e98-6d90-482f-a836-43424b60fb52 200 in 1714ms
+ ✓ Compiled /api/products in 385ms
+ GET /api/products 200 in 690ms
+ GET /api/products 200 in 294ms
+ GET /api/products 200 in 959ms
+ GET /api/products 200 in 320ms
+ GET /api/products 200 in 329ms
+ ○ Compiling /api/stripe/create-payment-intent ...
+ ✓ Compiled /api/stripe/create-payment-intent in 553ms
+ OPTIONS /api/stripe/create-payment-intent 200 in 614ms
+Received order data: {
+  "amount": 1957900,
+  "currency": "czk",
+  "customerEmail": "test@example.com",
+  "customerName": "Jan Testovací",
+  "customerPhone": "+420123456789",
+  "shippingAddress": {
+    "street": "Václavská 123",
+    "city": "Praha",
+    "postalCode": "12000"
+  },
+  "packetaPickupPointId": "14135",
+  "packetaPickupPointName": "Z-BOX Olbramkostel, Olbramkostel 140",
+  "packetaPickupPointAddress": "Olbramkostel 140, 671 51 Olbramkostel",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "da8baee5-ca5c-4895-a598-273f7038e134",
+        "quantity": 23,
+        "price": 600
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "quantity": 5,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "quantity": 1,
+        "price": 650
+      },
+      {
+        "product_id": "8e29b39d-6c02-4350-a6da-c968a08d9441",
+        "variant_id": "9dbef62f-14df-4275-9262-640be258c05c",
+        "quantity": 1,
+        "price": 1800
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "test@example.com-1754327079927-az5aqe4eb"
+}
+Found existing customer: cus_Sne4Gy0YBxGzsn
+🔧 Generating access token: df1bb3b7-2011-4a3e-a534-1de030662def
+🔧 Inserting order with service role key...
+🔧 Database response: {
+  order: {
+    id: 'aa06d2f0-0932-4781-8a68-63808aeef4b0',
+    access_token: 'df1bb3b7-2011-4a3e-a534-1de030662def'
+  },
+  orderError: null
+}
+✅ Data returned from DB after insert: {
+  "id": "aa06d2f0-0932-4781-8a68-63808aeef4b0",
+  "access_token": "df1bb3b7-2011-4a3e-a534-1de030662def"
+}
+✅ Created order with ID: aa06d2f0-0932-4781-8a68-63808aeef4b0
+✅ Order items inserted successfully
+🔧 Final response data: {
+  clientSecret: true,
+  paymentIntentId: 'pi_3RsRoTECICPYvq5c08o71IrZ',
+  orderId: 'aa06d2f0-0932-4781-8a68-63808aeef4b0',
+  accessToken: 'df1bb3b7-2011-4a3e-a534-1de030662def'
+}
+ POST /api/stripe/create-payment-intent 200 in 1868ms
+ ○ Compiling /api/stripe/webhook ...
+ ✓ Compiled /api/stripe/webhook in 676ms
+Unhandled event type: payment_intent.created
+ POST /api/stripe/webhook 200 in 755ms
+Payment succeeded: pi_3RsRoTECICPYvq5c08o71IrZ
+Unhandled event type: charge.succeeded
+ POST /api/stripe/webhook 200 in 51ms
+ GET /api/orders/aa06d2f0-0932-4781-8a68-63808aeef4b0?token=df1bb3b7-2011-4a3e-a534-1de030662def 200 in 314ms
+ POST /api/stripe/webhook 200 in 569ms
+Unhandled event type: charge.updated
+ POST /api/stripe/webhook 200 in 21ms
+ GET /api/orders/aa06d2f0-0932-4781-8a68-63808aeef4b0?token=df1bb3b7-2011-4a3e-a534-1de030662def 404 in 755ms
+ GET /api/products 200 in 226ms
+ GET /api/products 200 in 309ms
+ GET /api/products 200 in 317ms
+ GET /api/products 200 in 278ms
+ GET /api/products 200 in 310ms
+ OPTIONS /api/stripe/create-payment-intent 200 in 150ms
+Received order data: {
+  "amount": 137900,
+  "currency": "czk",
+  "customerEmail": "kokot@kokot.com",
+  "customerName": "kokot so",
+  "customerPhone": "129348202",
+  "shippingAddress": {
+    "street": "KUNDA",
+    "city": "kookt",
+    "postalCode": "34211"
+  },
+  "packetaPickupPointId": "28255",
+  "packetaPickupPointName": "Z-BOX Znojmo, Přímětická 1813/64",
+  "packetaPickupPointAddress": "Přímětická 1813/64, 669 02 Znojmo",
+  "orderData": {
+    "items": [
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "quantity": 1,
+        "price": 650
+      },
+      {
+        "product_id": "bb6ec0d2-2490-47d2-b65a-b7e23342db1f",
+        "quantity": 1,
+        "price": 650
+      }
+    ],
+    "notes": null
+  },
+  "idempotencyKey": "kokot@kokot.com-1754327680036-ln4216wo4"
+}
+Created new customer: cus_So46UIxw2FOkxw
+Unhandled event type: customer.created
+ POST /api/stripe/webhook 200 in 21ms
+🔧 Generating access token: f3296ee4-2879-493c-bfa0-a4c5b6974251
+🔧 Inserting order with service role key...
+🔧 Database response: {
+  order: {
+    id: 'dcf57dc2-2e21-4573-be08-05671a36f9bf',
+    access_token: 'f3296ee4-2879-493c-bfa0-a4c5b6974251'
+  },
+  orderError: null
+}
+✅ Data returned from DB after insert: {
+  "id": "dcf57dc2-2e21-4573-be08-05671a36f9bf",
+  "access_token": "f3296ee4-2879-493c-bfa0-a4c5b6974251"
+}
+✅ Created order with ID: dcf57dc2-2e21-4573-be08-05671a36f9bf
+Unhandled event type: payment_intent.created
+ POST /api/stripe/webhook 200 in 18ms
+✅ Order items inserted successfully
+🔧 Final response data: {
+  clientSecret: true,
+  paymentIntentId: 'pi_3RsRy9ECICPYvq5c1nrqDIxU',
+  orderId: 'dcf57dc2-2e21-4573-be08-05671a36f9bf',
+  accessToken: 'f3296ee4-2879-493c-bfa0-a4c5b6974251'
+}
+ POST /api/stripe/create-payment-intent 200 in 2225ms
+Payment succeeded: pi_3RsRy9ECICPYvq5c1nrqDIxU
+Unhandled event type: charge.succeeded
+ POST /api/stripe/webhook 200 in 27ms
+ GET /api/orders/dcf57dc2-2e21-4573-be08-05671a36f9bf?token=f3296ee4-2879-493c-bfa0-a4c5b6974251 404 in 349ms
+ POST /api/stripe/webhook 200 in 318ms
+Unhandled event type: charge.updated
+ POST /api/stripe/webhook 200 in 37ms
+ GET /api/products 200 in 344ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 307ms
+ ✓ Ready in 1131ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 613ms
+ GET /api/products 200 in 1233ms
+Přesměrování na přihlášení - chyba nebo žádný uživatel: Auth session missing!
+ ○ Compiling /auth/signin ...
+ ✓ Compiled /auth/signin in 2.1s
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 856ms
+ GET /auth/signin?redirect=%2F 500 in 3191ms
+ ✓ Compiled in 311ms
+ ✓ Compiled /auth/signin in 81ms
+ GET /auth/signin?redirect=%2F 200 in 400ms
+Přesměrování na přihlášení - chyba nebo žádný uživatel: Auth session missing!
+ GET /auth/signin?height=24&width=24&redirect=%2Fplaceholder.svg 200 in 195ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 366ms
+ ✓ Ready in 1188ms
+ ○ Compiling /auth/signin ...
+ ✓ Compiled /auth/signin in 2s
+ GET /auth/signin?redirect=%2F 200 in 646ms
+Přesměrování na přihlášení - chyba nebo žádný uživatel: Auth session missing!
+ GET /auth/signin?height=24&width=24&redirect=%2Fplaceholder.svg 200 in 162ms
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 224ms
+ ✓ Ready in 1065ms
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 224ms
+ ✓ Ready in 992ms
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 215ms
+ ✓ Ready in 872ms
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 223ms
+ ✓ Ready in 889ms
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 221ms
+ ✓ Ready in 872ms
+ ○ Compiling /auth/signin ...
+ ✓ Compiled /auth/signin in 2.4s
+ GET /auth/signin?redirect=%2F 200 in 2733ms
+   Reload env: .env.local
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> dotenv -e .env.local -- next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 349ms
+ ✓ Ready in 1535ms
+ ○ Compiling /auth/signin ...
+ ✓ Compiled /auth/signin in 2.4s
+ GET /auth/signin?redirect=%2F 200 in 2732ms
+Přesměrování na přihlášení - chyba nebo žádný uživatel: Auth session missing!
+ GET /auth/signin?height=24&width=24&redirect=%2Fplaceholder.svg 200 in 148ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 315ms
+ ✓ Ready in 1151ms
+Přesměrování na přihlášení - chyba nebo žádný uživatel: Auth session missing!
+ ○ Compiling /auth/signin ...
+ ✓ Compiled /auth/signin in 1824ms
+ GET /auth/signin?redirect=%2F 200 in 2104ms
+Přesměrování na přihlášení - chyba nebo žádný uživatel: Auth session missing!
+ GET /auth/signin?height=24&width=24&redirect=%2Fplaceholder.svg 200 in 233ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 326ms
+ ✓ Ready in 1143ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 206ms
+ ✓ Ready in 875ms
+ ○ Compiling /auth/signin ...
+ ✓ Compiled /auth/signin in 2s
+ GET /auth/signin?redirect=%2F 200 in 2324ms
+Přesměrování na přihlášení - chyba nebo žádný uživatel: Auth session missing!
+ GET /auth/signin?height=24&width=24&redirect=%2Fplaceholder.svg 200 in 255ms
+Přesměrování na přihlášení - chyba nebo žádný uživatel: Auth session missing!
+ GET /auth/signin?redirect=%2Fauth 200 in 125ms
+Přesměrování na přihlášení - chyba nebo žádný uživatel: Auth session missing!
+ GET /auth/signin?height=24&width=24&redirect=%2Fplaceholder.svg 200 in 96ms
+ ✓ Compiled middleware in 52ms
+ ✓ Compiled middleware in 26ms
+ ✓ Compiled in 335ms
+ ✓ Compiled middleware in 35ms
+ ✓ Compiled in 121ms
+ ✓ Compiled middleware in 26ms
+ ✓ Compiled in 7ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 249ms
+ ✓ Ready in 1007ms
+ ○ Compiling /auth/signin ...
+ ✓ Compiled /auth/signin in 3.1s
+ GET /auth/signin 200 in 3413ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 1132ms
+ GET /auth/signup 404 in 1250ms
+ GET /auth/signin?redirect=%2Fproducts 200 in 45ms
+ GET /auth/signin 200 in 154ms
+   Reload env: .env.local
+ GET /auth/signin 200 in 545ms
+ ✓ Compiled in 931ms
+ GET /auth/signin 200 in 593ms
+ GET /auth/signin 200 in 34ms
+ GET /auth/signin 200 in 93ms
+ GET /auth/signin 200 in 50ms
+ ✓ Compiled in 116ms
+ GET /auth/signin 200 in 85ms
+ GET /auth/signin 200 in 81ms
+ GET /auth/signin 200 in 36ms
+ GET /auth/signin 200 in 39ms
+ GET /auth/signin 200 in 31ms
+ ✓ Compiled middleware in 30ms
+ ✓ Compiled in 187ms
+ ✓ Compiled in 43ms
+ ✓ Compiled middleware in 14ms
+ ✓ Compiled in 13ms
+ ✓ Compiled in 184ms
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 825ms
+ GET /auth/signin 404 in 4ms
+   Reload env: .env.local
+ ✓ Compiled middleware in 39ms
+ ✓ Compiled in 1890ms
+ GET /auth/signin 404 in 1ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 319ms
+ ✓ Ready in 1208ms
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 540ms
+ GET /auth/signin 404 in 3ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 2.2s
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 217ms
+ ✓ Ready in 944ms
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 617ms
+ GET /auth/signin 404 in 2ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 2.3s
+ GET /auth/login 404 in 0ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 343ms
+ ✓ Ready in 1196ms
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 787ms
+ GET /auth/login 404 in 2ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 2.4s
+ GET /auth/signin 404 in 1ms
+ ✓ Compiled middleware in 75ms
+ ○ Compiling /auth/signin ...
+ ✓ Compiled /auth/signin in 998ms
+ GET /auth/signin 200 in 1154ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 267ms
+ ✓ Ready in 1013ms
+ ○ Compiling /auth/signin ...
+ ✓ Compiled /auth/signin in 1758ms
+ GET /auth/signin 200 in 2077ms
+ ✓ Compiled in 304ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 317ms
+ ✓ Ready in 1299ms
+ ○ Compiling /auth/login ...
+ ✓ Compiled /auth/login in 1771ms
+ GET /auth/login 200 in 2084ms
+ ○ Compiling /auth/sign-up ...
+ ✓ Compiled /auth/sign-up in 718ms
+ GET /auth/sign-up 200 in 772ms
+ ✓ Compiled /auth/sign-up in 7ms
+ GET /auth/sign-up 200 in 1742ms
+ ✓ Compiled /auth/sign-up in 10ms
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 621ms
+ GET /auth/sign-up 500 in 1279ms
+ ✓ Compiled in 1693ms
+ ✓ Compiled middleware in 61ms
+ ✓ Compiled in 34ms
+ ✓ Compiled middleware in 51ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 378ms
+ ✓ Ready in 1276ms
+ ○ Compiling /auth/login ...
+ ✓ Compiled /auth/login in 1954ms
+ GET /auth/login 200 in 2270ms
+ GET /auth/login 200 in 110ms
+ GET /auth/login 200 in 35ms
+ ✓ Compiled /auth/login in 12ms
+ GET /auth/login 200 in 1474ms
+ ✓ Compiled /auth/login in 7ms
+ GET /auth/login 200 in 400ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.10.2:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 267ms
+ ✓ Ready in 1047ms
+ ○ Compiling /auth/login ...
+ ✓ Compiled /auth/login in 1929ms
+ GET /auth/login 200 in 2206ms
+ GET /auth/login 200 in 120ms
+ GET /auth/login 200 in 164ms
+ GET /auth/login 200 in 83ms
+ GET /auth/login 200 in 107ms
+ GET /auth/login 200 in 110ms
+[?25h
+
+> backend@0.1.0 dev /Users/jangajdos/Projects/yeezuz2020.store/backend
+> next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.1.5:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled in 333ms
+ ✓ Ready in 1188ms
+ ○ Compiling /auth/login ...
+ ✓ Compiled /auth/login in 1627ms
+ GET /auth/login?token=96a4aff6-9e76-4801-b9e8-1de88835004f 200 in 1849ms
+ ✓ Compiled /api/products in 417ms
+ GET /api/products 400 in 721ms
+[?25h
