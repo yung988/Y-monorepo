@@ -1,0 +1,24 @@
+{
+  "name": "Ymonorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:all": "pnpm -r --filter ./Y-* build",
+    "env:merge": "node scripts/merge-envs.js",
+    "verify:envs": "node scripts/verify-envs.js",
+    "dev": "pnpm -r --parallel --filter ./Y-* dev",
+    "dev:fe": "pnpm -C Y-frontend dev",
+    "dev:be": "pnpm -C Y-backend dev",
+    "start:all": "pnpm -r --parallel --filter ./Y-* start",
+    "lint": "pnpm -r --if-present lint",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "repo:split": "powershell -ExecutionPolicy Bypass -File scripts\\split-subtrees.ps1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  },
+  "private": true
+}
