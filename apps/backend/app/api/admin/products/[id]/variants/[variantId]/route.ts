@@ -1,6 +1,6 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
-import { requireAdminOrEditor } from "@/lib/api-auth";
+import { requireAdminOrEditor, requireAdmin } from "@/lib/api-auth";
 import { createClient } from "@/utils/supabase/server";
 
 // PATCH /api/admin/products/[id]/variants/[variantId]
