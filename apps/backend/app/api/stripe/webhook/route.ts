@@ -6,6 +6,10 @@ import { sendOrderConfirmationEmail, sendOrderStatusUpdateEmail } from "@/lib/em
 import { generateInvoicePdfBuffer } from "@/lib/invoice/pdf";
 import { createPacketaShipment } from "@/lib/packeta";
 
+type Variant = { id: string; weight?: number | null; product_id?: string };
+type Product = { id: string; weight?: number | null };
+type OrderItemRef = { product_id?: string | null; variant_id?: string | null; quantity?: number | null };
+
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2025-07-30.basil",
 });
@@ -141,33 +145,33 @@ async function handlePaymentSucceeded(paymentIntent: Stripe.PaymentIntent) {
   // Compute total order weight (kg) from items and store invoice metadata
   let totalWeight = 0;
   try {
-    const { data: items } = await supabase
+    const { data: itemsData } = await supabase
       .from("order_items")
       .select("product_id, variant_id, quantity")
       .eq("order_id", order.id);
+    const items = (itemsData || []) as OrderItemRef[];
 
-    const variantIds = (items || [])
-      .map((it: any) => it.variant_id)
-      .filter((v: any) => !!v);
-    const productIds = (items || [])
-      .map((it: any) => it.product_id)
-      .filter((p: any) => !!p);
+    const variantIds = items.map((it) => it.variant_id).filter((v): v is string => !!v);
+    const productIds = items.map((it) => it.product_id).filter((p): p is string => !!p);
 
-    const { data: variants } = variantIds.length
+    const variantsRes = variantIds.length
       ? await supabase.from("product_variants").select("id, weight, product_id").in("id", variantIds)
-      : { data: [] as any[] } as any;
-    const { data: products } = productIds.length
+      : ({ data: [] as Variant[] } as { data: Variant[] });
+    const productsRes = productIds.length
       ? await supabase.from("products").select("id, weight").in("id", productIds)
-      : { data: [] as any[] } as any;
+      : ({ data: [] as Product[] } as { data: Product[] });
 
-    const vMap = new Map((variants || []).map((v: any) => [v.id, v]));
-    const pMap = new Map((products || []).map((p: any) => [p.id, p]));
+    const variants = (variantsRes.data || []) as Variant[];
+    const products = (productsRes.data || []) as Product[];
 
-    for (const it of items || []) {
+    const vMap = new Map<string, Variant>(variants.map((v) => [v.id, v]));
+    const pMap = new Map<string, Product>(products.map((p) => [p.id, p]));
+
+    for (const it of items) {
       const v = it.variant_id ? vMap.get(it.variant_id) : undefined;
       const p = it.product_id ? pMap.get(it.product_id) : undefined;
-      const w = (v?.weight ?? p?.weight ?? 0.25) as number; // default 0.25 kg per item
-      totalWeight += (Number(w) || 0.25) * (it.quantity || 1);
+      const w = v?.weight ?? p?.weight ?? 0.25; // default 0.25 kg per item
+      totalWeight += (Number(w) || 0.25) * (Number(it.quantity) || 1);
     }
   } catch (wErr) {
     console.warn("Failed to compute total weight, using default:", wErr);
@@ -435,7 +439,7 @@ async function createPacketaShipmentForOrder(
       orderNumber: order.order_number || order.id,
       customerName,
       customerSurname,
-      customerEmail: order.customer_email,
+      customerEmail: order.customer_email || "",
       customerPhone: order.customer_phone || "",
       pickupPointId: order.packeta_pickup_point_id,
       orderValue: order.total_amount / 100, // Convert cents to koruny for Packeta
