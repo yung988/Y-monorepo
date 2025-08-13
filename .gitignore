@@ -21,3 +21,6 @@ yarn-error.log*
 
 # Vercel local project settings (linked project)
 .vercel
+
+# Local tool outputs
+.output.txt
