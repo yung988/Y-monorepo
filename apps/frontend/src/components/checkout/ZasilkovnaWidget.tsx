@@ -3,8 +3,7 @@
 import { MapPin } from "lucide-react";
 import Script from "next/script";
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
-// Replaced Card components with divs to avoid React type mismatch during build
+// Using native button to avoid React type mismatch during build
 
 interface ZasilkovnaPoint {
   id: string;
@@ -98,16 +97,15 @@ export default function ZasilkovnaWidget({
                     Klikněte na tlačítko a vyberte si nejbližší výdejní místo
                   </p>
                 </div>
-                <Button
+                <button
                   type="button"
                   onClick={openWidget}
                   disabled={!widgetLoaded}
-                  variant="outline"
-                  className="ml-4"
+                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 ml-4"
                 >
                   <MapPin className="w-4 h-4 mr-2" />
                   Vybrat výdejní místo
-                </Button>
+                </button>
               </div>
             </div>
           </div>
@@ -128,15 +126,13 @@ export default function ZasilkovnaWidget({
                     </p>
                   </div>
                 </div>
-                <Button
+                <button
                   type="button"
                   onClick={openWidget}
-                  variant="outline"
-                  size="sm"
-                  className="ml-4"
+                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ml-4"
                 >
                   Změnit
-                </Button>
+                </button>
               </div>
             </div>
           </div>
