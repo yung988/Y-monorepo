@@ -1,8 +1,10 @@
 {
-  "name": "ymonorepo",
-  "version": "1.0.0",
+  "name": "y-monorepo",
   "private": true,
-  "packageManager": "pnpm@8.15.9",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "engines": {
     "node": "20.x"
   },
@@ -25,7 +27,14 @@
     "deploy:all": "pnpm run deploy:fe && pnpm run deploy:be"
   },
   "devDependencies": {
+
     "turbo": "^2.5.5",
     "typescript": "^5.5.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "19.1.1",
+      "react-dom": "19.1.1"
+    }
   }
 }
