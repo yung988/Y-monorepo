@@ -341,9 +341,6 @@ importers:
       '@types/node':
         specifier: ^20.17.30
         version: 20.19.10
-      '@types/react':
-        specifier: 19.1.10
-        version: 19.1.10
       knip:
         specifier: ^5.62.0
         version: 5.62.0(@types/node@20.19.10)(typescript@5.9.2)
