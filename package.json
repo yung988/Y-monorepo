@@ -1,24 +1,28 @@
 {
-  "name": "Ymonorepo",
+  "name": "ymonorepo",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
+  "private": true,
+  "packageManager": "pnpm@10.0.0",
   "scripts": {
     "build": "tsc",
-    "build:all": "pnpm -r --filter ./Y-* build",
-    "env:merge": "node scripts/merge-envs.js",
-    "verify:envs": "node scripts/verify-envs.js",
-    "dev": "pnpm -r --parallel --filter ./Y-* dev",
-    "dev:fe": "pnpm -C Y-frontend dev",
-    "dev:be": "pnpm -C Y-backend dev",
-    "start:all": "pnpm -r --parallel --filter ./Y-* start",
+    "build:all": "pnpm -r --filter ./apps/* build",
+    "dev": "pnpm -r --parallel --filter ./apps/* dev",
+    "dev:fe": "pnpm -C apps/frontend dev",
+    "dev:be": "pnpm -C apps/backend dev",
+    "start:all": "pnpm -r --parallel --filter ./apps/* start",
     "lint": "pnpm -r --if-present lint",
     "typecheck": "pnpm -r --if-present typecheck",
-    "repo:split": "powershell -ExecutionPolicy Bypass -File scripts\\split-subtrees.ps1"
+    "repo:split": "powershell -ExecutionPolicy Bypass -File scripts\\split-subtrees.ps1",
+    "vercel:link:fe": "npx vercel link --cwd apps/frontend",
+    "vercel:link:be": "npx vercel link --cwd apps/backend",
+    "vercel:pull:fe": "npx vercel pull --environment=production --cwd apps/frontend",
+    "vercel:pull:be": "npx vercel pull --environment=production --cwd apps/backend",
+    "deploy:fe": "npx vercel --cwd apps/frontend --prod",
+    "deploy:be": "npx vercel --cwd apps/backend --prod",
+    "deploy:all": "pnpm run deploy:fe && pnpm run deploy:be"
   },
-  "dependencies": {},
   "devDependencies": {
+    "turbo": "^2.5.5",
     "typescript": "^5.5.3"
-  },
-  "private": true
+  }
 }

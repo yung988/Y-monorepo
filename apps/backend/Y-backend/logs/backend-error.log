@@ -1,0 +1,980 @@
+ ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+ ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+ ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+Webhook signature verification failed: No stripe-signature header value was provided.
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. Please report the content of /var/folders/yp/c5wp9_ks719647wztx6n_nw80000gn/T/next-panic-6ba6a8070101b12b2237a4b4f0197c4d.log, along with a description of what you were doing when the error occurred, to https://github.com/vercel/next.js/issues/new?template=1.bug_report.yml
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. Please report the content of /var/folders/yp/c5wp9_ks719647wztx6n_nw80000gn/T/next-panic-6ba6a8070101b12b2237a4b4f0197c4d.log, along with a description of what you were doing when the error occurred, to https://github.com/vercel/next.js/issues/new?template=1.bug_report.yml
+[Error [TurbopackInternalError]: Cell CellId { type_id: ValueTypeId { id: 506, name: "turbopack@TODO::::transition::TransitionOptions" }, index: 0 } no longer exists in task Project::edge_middleware_context (no cell of this type exists)
+
+Debug info:
+- Execution of TaskId { id: 2147483663 } transient failed
+- Execution of get_written_endpoint_with_issues_operation failed
+- Execution of endpoint_write_to_disk failed
+- Execution of <MiddlewareEndpoint as Endpoint>::output failed
+- Execution of MiddlewareEndpoint::output_assets failed
+- Execution of MiddlewareEndpoint::userland_module failed
+- Execution of <ModuleAssetContext as AssetContext>::process failed
+- Cell CellId { type_id: ValueTypeId { id: 506, name: "turbopack@TODO::::transition::TransitionOptions" }, index: 0 } no longer exists in task Project::edge_middleware_context (no cell of this type exists)]
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+AuthApiError: Invalid Refresh Token: Refresh Token Not Found
+    at handleError (../../../src/lib/fetch.ts:102:8)
+    at async _handleRequest (../../../src/lib/fetch.ts:195:4)
+    at async _request (../../../src/lib/fetch.ts:157:15)
+    at async (../../src/GoTrueClient.ts:2058:17)
+    at async (../../../src/lib/helpers.ts:228:25) {
+  __isAuthError: true,
+  status: 400,
+  code: 'refresh_token_not_found'
+}
+AuthApiError: Invalid Refresh Token: Refresh Token Not Found
+    at handleError (../../../src/lib/fetch.ts:102:8)
+    at async _handleRequest (../../../src/lib/fetch.ts:195:4)
+    at async _request (../../../src/lib/fetch.ts:157:15)
+    at async (../../src/GoTrueClient.ts:2058:17)
+    at async (../../../src/lib/helpers.ts:228:25) {
+  __isAuthError: true,
+  status: 400,
+  code: 'refresh_token_not_found'
+}
+AuthApiError: Invalid Refresh Token: Refresh Token Not Found
+    at handleError (../../../src/lib/fetch.ts:102:8)
+    at async _handleRequest (../../../src/lib/fetch.ts:195:4)
+    at async _request (../../../src/lib/fetch.ts:157:15)
+    at async (../../src/GoTrueClient.ts:2058:17)
+    at async (../../../src/lib/helpers.ts:228:25) {
+  __isAuthError: true,
+  status: 400,
+  code: 'refresh_token_not_found'
+}
+AuthApiError: Invalid Refresh Token: Refresh Token Not Found
+    at handleError (../../../src/lib/fetch.ts:102:8)
+    at async _handleRequest (../../../src/lib/fetch.ts:195:4)
+    at async _request (../../../src/lib/fetch.ts:157:15)
+    at async (../../src/GoTrueClient.ts:2058:17)
+    at async (../../../src/lib/helpers.ts:228:25) {
+  __isAuthError: true,
+  status: 400,
+  code: 'refresh_token_not_found'
+}
+Failed to create order: {
+  code: 'PGRST204',
+  details: null,
+  hint: null,
+  message: "Could not find the 'stripe_payment_intent_id' column of 'orders' in the schema cache"
+}
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+Error: Route "/api/products/slug/[slug]" used `params.slug`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at GET (app/api/products/slug/[slug]/route.ts:10:12)
+   8 |   try {
+   9 |     const supabase = await createClient();
+> 10 |     const { slug } = params;
+     |            ^
+  11 |
+  12 |     if (!slug) {
+  13 |       return NextResponse.json({ error: "Slug is required" }, { status: 400 });
+Error: Route "/api/products/slug/[slug]" used `params.slug`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at GET (app/api/products/slug/[slug]/route.ts:10:12)
+   8 |   try {
+   9 |     const supabase = await createClient();
+> 10 |     const { slug } = params;
+     |            ^
+  11 |
+  12 |     if (!slug) {
+  13 |       return NextResponse.json({ error: "Slug is required" }, { status: 400 });
+Error: Route "/api/products/slug/[slug]" used `params.slug`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at GET (app/api/products/slug/[slug]/route.ts:10:12)
+   8 |   try {
+   9 |     const supabase = await createClient();
+> 10 |     const { slug } = params;
+     |            ^
+  11 |
+  12 |     if (!slug) {
+  13 |       return NextResponse.json({ error: "Slug is required" }, { status: 400 });
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+Error: Route "/api/products/slug/[slug]" used `params.slug`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at GET (app/api/products/slug/[slug]/route.ts:7:12)
+   5 |   try {
+   6 |     const supabase = await createClient();
+>  7 |     const { slug } = params;
+     |            ^
+   8 |
+   9 |     if (!slug) {
+  10 |       return NextResponse.json({ error: "Slug is required" }, { status: 400 });
+Error: Route "/api/products/slug/[slug]" used `params.slug`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at GET (app/api/products/slug/[slug]/route.ts:7:12)
+   5 |   try {
+   6 |     const supabase = await createClient();
+>  7 |     const { slug } = params;
+     |            ^
+   8 |
+   9 |     if (!slug) {
+  10 |       return NextResponse.json({ error: "Slug is required" }, { status: 400 });
+Error: Route "/api/products/slug/[slug]" used `params.slug`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at GET (app/api/products/slug/[slug]/route.ts:7:12)
+   5 |   try {
+   6 |     const supabase = await createClient();
+>  7 |     const { slug } = params;
+     |            ^
+   8 |
+   9 |     if (!slug) {
+  10 |       return NextResponse.json({ error: "Slug is required" }, { status: 400 });
+Error: Route "/api/products/slug/[slug]" used `params.slug`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at GET (app/api/products/slug/[slug]/route.ts:7:12)
+   5 |   try {
+   6 |     const supabase = await createClient();
+>  7 |     const { slug } = params;
+     |            ^
+   8 |
+   9 |     if (!slug) {
+  10 |       return NextResponse.json({ error: "Slug is required" }, { status: 400 });
+Error: Route "/api/products/slug/[slug]" used `params.slug`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at GET (app/api/products/slug/[slug]/route.ts:7:12)
+   5 |   try {
+   6 |     const supabase = await createClient();
+>  7 |     const { slug } = params;
+     |            ^
+   8 |
+   9 |     if (!slug) {
+  10 |       return NextResponse.json({ error: "Slug is required" }, { status: 400 });
+Error: Route "/api/products/slug/[slug]" used `params.slug`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at GET (app/api/products/slug/[slug]/route.ts:7:12)
+   5 |   try {
+   6 |     const supabase = await createClient();
+>  7 |     const { slug } = params;
+     |            ^
+   8 |
+   9 |     if (!slug) {
+  10 |       return NextResponse.json({ error: "Slug is required" }, { status: 400 });
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+Error: Route "/api/products/slug/[slug]" used `params.slug`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at GET (app/api/products/slug/[slug]/route.ts:7:12)
+   5 |   try {
+   6 |     const supabase = await createClient();
+>  7 |     const { slug } = params;
+     |            ^
+   8 |
+   9 |     if (!slug) {
+  10 |       return NextResponse.json({ error: "Slug is required" }, { status: 400 });
+Error: Route "/api/products/slug/[slug]" used `params.slug`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at GET (app/api/products/slug/[slug]/route.ts:7:12)
+   5 |   try {
+   6 |     const supabase = await createClient();
+>  7 |     const { slug } = params;
+     |            ^
+   8 |
+   9 |     if (!slug) {
+  10 |       return NextResponse.json({ error: "Slug is required" }, { status: 400 });
+Error: Route "/api/products/slug/[slug]" used `params.slug`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at GET (app/api/products/slug/[slug]/route.ts:7:12)
+   5 |   try {
+   6 |     const supabase = await createClient();
+>  7 |     const { slug } = params;
+     |            ^
+   8 |
+   9 |     if (!slug) {
+  10 |       return NextResponse.json({ error: "Slug is required" }, { status: 400 });
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+Error: Route "/api/products/slug/[slug]" used `params.slug`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at GET (app/api/products/slug/[slug]/route.ts:7:12)
+   5 |   try {
+   6 |     const supabase = await createClient();
+>  7 |     const { slug } = params;
+     |            ^
+   8 |
+   9 |     if (!slug) {
+  10 |       return NextResponse.json({ error: "Slug is required" }, { status: 400 });
+Failed to create order: {
+  code: 'PGRST204',
+  details: null,
+  hint: null,
+  message: "Could not find the 'stripe_payment_intent_id' column of 'orders' in the schema cache"
+}
+Error: Route "/api/products/slug/[slug]" used `params.slug`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at GET (app/api/products/slug/[slug]/route.ts:7:12)
+   5 |   try {
+   6 |     const supabase = await createClient();
+>  7 |     const { slug } = params;
+     |            ^
+   8 |
+   9 |     if (!slug) {
+  10 |       return NextResponse.json({ error: "Slug is required" }, { status: 400 });
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+Error [AuthApiError]: Invalid Refresh Token: Refresh Token Not Found
+    at handleError (../../../src/lib/fetch.ts:102:8)
+    at async _handleRequest (../../../src/lib/fetch.ts:195:4)
+    at async _request (../../../src/lib/fetch.ts:157:15)
+    at async (../../src/GoTrueClient.ts:2113:17)
+    at async (../../../src/lib/helpers.ts:228:25) {
+  __isAuthError: true,
+  status: 400,
+  code: 'refresh_token_not_found'
+}
+Error [AuthApiError]: Invalid Refresh Token: Refresh Token Not Found
+    at handleError (../../../src/lib/fetch.ts:102:8)
+    at async _handleRequest (../../../src/lib/fetch.ts:195:4)
+    at async _request (../../../src/lib/fetch.ts:157:15)
+    at async (../../src/GoTrueClient.ts:2113:17)
+    at async (../../../src/lib/helpers.ts:228:25) {
+  __isAuthError: true,
+  status: 400,
+  code: 'refresh_token_not_found'
+}
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+Failed to insert order items: {
+  code: '22P02',
+  details: null,
+  hint: null,
+  message: 'invalid input syntax for type uuid: "undefined-One Size"'
+}
+Database transaction failed: Error: Failed to insert order items: invalid input syntax for type uuid: "undefined-One Size"
+    at POST (app/api/stripe/create-payment-intent/route.ts:212:16)
+  210 |           // Attempt to delete the created order to prevent orphans
+  211 |           await supabase.from("orders").delete().eq("id", orderDataForResponse!.id);
+> 212 |           throw new Error(`Failed to insert order items: ${itemsError.message}`);
+      |                ^
+  213 |         }
+  214 |       }
+  215 |     } catch (dbError: any) {
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+[Error: ENOENT: no such file or directory, scandir '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'
+}
+ ⨯ unhandledRejection: [Error: ENOENT: no such file or directory, scandir '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'
+}
+ ⨯ unhandledRejection:  [Error: ENOENT: no such file or directory, scandir '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'
+}
+[Error: ENOENT: no such file or directory, scandir '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'
+}
+[Error: ENOENT: no such file or directory, scandir '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'
+}
+[Error: ENOENT: no such file or directory, scandir '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'
+}
+[Error: ENOENT: no such file or directory, scandir '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'
+}
+[Error: ENOENT: no such file or directory, scandir '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'
+}
+[Error: ENOENT: no such file or directory, scandir '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'
+}
+[Error: ENOENT: no such file or directory, scandir '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'
+}
+[Error: ENOENT: no such file or directory, scandir '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'
+}
+[Error: ENOENT: no such file or directory, scandir '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'
+}
+[Error: ENOENT: no such file or directory, scandir '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'
+}
+[Error: ENOENT: no such file or directory, scandir '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'
+}
+[Error: ENOENT: no such file or directory, scandir '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/Users/jangajdos/Projects/yeezuz2020.store/backend/pages'
+}
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+Failed to create order: {
+  code: 'PGRST204',
+  details: null,
+  hint: null,
+  message: "Could not find the 'stripe_payment_intent_id' column of 'orders' in the schema cache"
+}
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+Failed to create order: {
+  code: 'PGRST204',
+  details: null,
+  hint: null,
+  message: "Could not find the 'stripe_payment_intent_id' column of 'orders' in the schema cache"
+}
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+Failed to create order: {
+  code: 'PGRST204',
+  details: null,
+  hint: null,
+  message: "Could not find the 'stripe_payment_intent_id' column of 'orders' in the schema cache"
+}
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+Failed to create order: {
+  code: 'PGRST204',
+  details: null,
+  hint: null,
+  message: "Could not find the 'stripe_payment_intent_id' column of 'orders' in the schema cache"
+}
+Error fetching order: {
+  code: '42703',
+  details: null,
+  hint: null,
+  message: 'column product_variants_2.image_url does not exist'
+}
+Error fetching order: {
+  code: '42703',
+  details: null,
+  hint: null,
+  message: 'column product_variants_2.image_url does not exist'
+}
+Failed to create order: {
+  code: 'PGRST204',
+  details: null,
+  hint: null,
+  message: "Could not find the 'stripe_payment_intent_id' column of 'orders' in the schema cache"
+}
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+ ⨯ ./app/auth/signin/page.tsx:10:1
+Module not found: Can't resolve '@/lib/supabase/client'
+[0m [90m  8 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m"@/components/ui/input"[39m[33m;[39m[0m
+[0m [90m  9 |[39m [36mimport[39m { [33mLabel[39m } [36mfrom[39m [32m"@/components/ui/label"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 10 |[39m [36mimport[39m { createClient } [36mfrom[39m [32m"@/lib/supabase/client"[39m[33m;[39m[0m
+[0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 11 |[39m[0m
+[0m [90m 12 |[39m [36mfunction[39m [33mSignInForm[39m() {[0m
+[0m [90m 13 |[39m   [36mconst[39m [loading[33m,[39m setLoading] [33m=[39m useState([36mfalse[39m)[33m;[39m[0m
+
+Import map: aliased to relative './lib/supabase/client' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./components/admin-sidebar.tsx:36:1
+Module not found: Can't resolve '@/lib/supabase/client'
+[0m [90m 34 |[39m   [33mSidebarRail[39m[33m,[39m[0m
+[0m [90m 35 |[39m } [36mfrom[39m [32m"@/components/ui/sidebar"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 36 |[39m [36mimport[39m { createClient } [36mfrom[39m [32m"@/lib/supabase/client"[39m[33m;[39m[0m
+[0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 37 |[39m[0m
+[0m [90m 38 |[39m [36mconst[39m menuItems [33m=[39m [[0m
+[0m [90m 39 |[39m   {[0m
+
+Import map: aliased to relative './lib/supabase/client' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/render.tsx:1263:19)
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/render.tsx:1263:19)
+ ⨯ ./components/admin-sidebar.tsx:36:1
+Module not found: Can't resolve '@/lib/supabase/client'
+[0m [90m 34 |[39m   [33mSidebarRail[39m[33m,[39m[0m
+[0m [90m 35 |[39m } [36mfrom[39m [32m"@/components/ui/sidebar"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 36 |[39m [36mimport[39m { createClient } [36mfrom[39m [32m"@/lib/supabase/client"[39m[33m;[39m[0m
+[0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 37 |[39m[0m
+[0m [90m 38 |[39m [36mconst[39m menuItems [33m=[39m [[0m
+[0m [90m 39 |[39m   {[0m
+
+Import map: aliased to relative './lib/supabase/client' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/admin-sidebar.tsx:36:1
+Module not found: Can't resolve '@/lib/supabase/client'
+[0m [90m 34 |[39m   [33mSidebarRail[39m[33m,[39m[0m
+[0m [90m 35 |[39m } [36mfrom[39m [32m"@/components/ui/sidebar"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 36 |[39m [36mimport[39m { createClient } [36mfrom[39m [32m"@/lib/supabase/client"[39m[33m;[39m[0m
+[0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 37 |[39m[0m
+[0m [90m 38 |[39m [36mconst[39m menuItems [33m=[39m [[0m
+[0m [90m 39 |[39m   {[0m
+
+Import map: aliased to relative './lib/supabase/client' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/admin-sidebar.tsx:36:1
+Module not found: Can't resolve '@/lib/supabase/client'
+[0m [90m 34 |[39m   [33mSidebarRail[39m[33m,[39m[0m
+[0m [90m 35 |[39m } [36mfrom[39m [32m"@/components/ui/sidebar"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 36 |[39m [36mimport[39m { createClient } [36mfrom[39m [32m"@/lib/supabase/client"[39m[33m;[39m[0m
+[0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 37 |[39m[0m
+[0m [90m 38 |[39m [36mconst[39m menuItems [33m=[39m [[0m
+[0m [90m 39 |[39m   {[0m
+
+Import map: aliased to relative './lib/supabase/client' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/admin-sidebar.tsx:36:1
+Module not found: Can't resolve '@/lib/supabase/client'
+[0m [90m 34 |[39m   [33mSidebarRail[39m[33m,[39m[0m
+[0m [90m 35 |[39m } [36mfrom[39m [32m"@/components/ui/sidebar"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 36 |[39m [36mimport[39m { createClient } [36mfrom[39m [32m"@/lib/supabase/client"[39m[33m;[39m[0m
+[0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 37 |[39m[0m
+[0m [90m 38 |[39m [36mconst[39m menuItems [33m=[39m [[0m
+[0m [90m 39 |[39m   {[0m
+
+Import map: aliased to relative './lib/supabase/client' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+ ⚠ Fast Refresh had to perform a full reload when ./components/ui/button.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createServerClient (../../src/createServerClient.ts:139:10)
+    at updateSession (lib/supabase/middleware.ts:11:36)
+    at middleware (middleware.ts:5:29)
+   9 |   // With Fluid compute, don't put this client in a global environment
+  10 |   // variable. Always create a new one on each request.
+> 11 |   const supabase = createServerClient(
+     |                                    ^
+  12 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  13 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  14 |     {
+ ⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createServerClient (../../src/createServerClient.ts:139:10)
+    at updateSession (lib/supabase/middleware.ts:11:36)
+    at middleware (middleware.ts:5:29)
+   9 |   // With Fluid compute, don't put this client in a global environment
+  10 |   // variable. Always create a new one on each request.
+> 11 |   const supabase = createServerClient(
+     |                                    ^
+  12 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  13 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  14 |     {
+ ⚠ Fast Refresh had to perform a full reload when ./components/ui/button.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createServerClient (../../src/createServerClient.ts:139:10)
+    at updateSession (lib/supabase/middleware.ts:11:36)
+    at middleware (middleware.ts:5:29)
+   9 |   // With Fluid compute, don't put this client in a global environment
+  10 |   // variable. Always create a new one on each request.
+> 11 |   const supabase = createServerClient(
+     |                                    ^
+  12 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  13 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  14 |     {
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (webpack://next/dist/src/server/render.tsx:1263:19)
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (webpack://next/dist/src/server/render.tsx:1263:19)
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (webpack://next/dist/src/server/render.tsx:1263:19)
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (webpack://next/dist/src/server/render.tsx:1263:19)
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (webpack://next/dist/src/server/render.tsx:1263:19)
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (webpack://next/dist/src/server/render.tsx:1263:19)
+ ⨯ Error: @supabase/ssr: Your project's URL and API key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createBrowserClient (../../src/createBrowserClient.ts:108:10)
+    at createClient (lib/supabase/client.ts:4:27)
+    at AdminSidebar (components/admin-sidebar.tsx:70:30)
+  2 |
+  3 | export function createClient() {
+> 4 |   return createBrowserClient(
+    |                           ^
+  5 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  6 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  7 |   ) {
+  digest: '3480800313'
+}
+ ⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createServerClient (../../src/createServerClient.ts:139:10)
+    at updateSession (lib/supabase/middleware.ts:11:36)
+    at middleware (middleware.ts:5:29)
+   9 |   // With Fluid compute, don't put this client in a global environment
+  10 |   // variable. Always create a new one on each request.
+> 11 |   const supabase = createServerClient(
+     |                                    ^
+  12 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  13 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  14 |     {
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (webpack://next/dist/src/server/render.tsx:1263:19)
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (webpack://next/dist/src/server/render.tsx:1263:19)
+ ⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createServerClient (../../src/createServerClient.ts:139:10)
+    at updateSession (lib/supabase/middleware.ts:11:36)
+    at middleware (middleware.ts:5:29)
+   9 |   // With Fluid compute, don't put this client in a global environment
+  10 |   // variable. Always create a new one on each request.
+> 11 |   const supabase = createServerClient(
+     |                                    ^
+  12 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  13 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  14 |     {
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (webpack://next/dist/src/server/render.tsx:1263:19)
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (webpack://next/dist/src/server/render.tsx:1263:19)
+ ⨯ Error: @supabase/ssr: Your project's URL and API key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createBrowserClient (../../src/createBrowserClient.ts:108:10)
+    at createClient (lib/supabase/client.ts:4:27)
+    at AdminSidebar (components/admin-sidebar.tsx:70:30)
+  2 |
+  3 | export function createClient() {
+> 4 |   return createBrowserClient(
+    |                           ^
+  5 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  6 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  7 |   ) {
+  digest: '3480800313'
+}
+ ⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createServerClient (../../src/createServerClient.ts:139:10)
+    at updateSession (lib/supabase/middleware.ts:11:36)
+    at middleware (middleware.ts:5:29)
+   9 |   // With Fluid compute, don't put this client in a global environment
+  10 |   // variable. Always create a new one on each request.
+> 11 |   const supabase = createServerClient(
+     |                                    ^
+  12 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  13 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  14 |     {
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (webpack://next/dist/src/server/render.tsx:1263:19)
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (webpack://next/dist/src/server/render.tsx:1263:19)
+ ⨯ Error: @supabase/ssr: Your project's URL and API key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createBrowserClient (../../src/createBrowserClient.ts:108:10)
+    at createClient (lib/supabase/client.ts:4:27)
+    at AdminSidebar (components/admin-sidebar.tsx:70:30)
+  2 |
+  3 | export function createClient() {
+> 4 |   return createBrowserClient(
+    |                           ^
+  5 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  6 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  7 |   ) {
+  digest: '3480800313'
+}
+ ⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createServerClient (../../src/createServerClient.ts:139:10)
+    at updateSession (lib/supabase/middleware.ts:11:36)
+    at middleware (middleware.ts:5:29)
+   9 |   // With Fluid compute, don't put this client in a global environment
+  10 |   // variable. Always create a new one on each request.
+> 11 |   const supabase = createServerClient(
+     |                                    ^
+  12 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  13 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  14 |     {
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (webpack://next/dist/src/server/render.tsx:1263:19)
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (webpack://next/dist/src/server/render.tsx:1263:19)
+ ⨯ Error: @supabase/ssr: Your project's URL and API key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createBrowserClient (../../src/createBrowserClient.ts:108:10)
+    at createClient (lib/supabase/client.ts:4:27)
+    at AdminSidebar (components/admin-sidebar.tsx:70:30)
+  2 |
+  3 | export function createClient() {
+> 4 |   return createBrowserClient(
+    |                           ^
+  5 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  6 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  7 |   ) {
+  digest: '3480800313'
+}
+ ⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createServerClient (../../src/createServerClient.ts:139:10)
+    at updateSession (lib/supabase/middleware.ts:11:36)
+    at middleware (middleware.ts:5:29)
+   9 |   // With Fluid compute, don't put this client in a global environment
+  10 |   // variable. Always create a new one on each request.
+> 11 |   const supabase = createServerClient(
+     |                                    ^
+  12 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  13 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  14 |     {
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (webpack://next/dist/src/server/render.tsx:1263:19)
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (webpack://next/dist/src/server/render.tsx:1263:19)
+ ⨯ Error: @supabase/ssr: Your project's URL and API key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createBrowserClient (../../src/createBrowserClient.ts:108:10)
+    at createClient (lib/supabase/client.ts:4:27)
+    at AdminSidebar (components/admin-sidebar.tsx:70:30)
+  2 |
+  3 | export function createClient() {
+> 4 |   return createBrowserClient(
+    |                           ^
+  5 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  6 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  7 |   ) {
+  digest: '3480800313'
+}
+ ⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createServerClient (../../src/createServerClient.ts:139:10)
+    at updateSession (lib/supabase/middleware.ts:11:36)
+    at middleware (middleware.ts:5:29)
+   9 |   // With Fluid compute, don't put this client in a global environment
+  10 |   // variable. Always create a new one on each request.
+> 11 |   const supabase = createServerClient(
+     |                                    ^
+  12 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  13 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  14 |     {
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (webpack://next/dist/src/server/render.tsx:1263:19)
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (webpack://next/dist/src/server/render.tsx:1263:19)
+ ⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createServerClient (../../src/createServerClient.ts:139:10)
+    at updateSession (lib/supabase/middleware.ts:11:36)
+    at middleware (middleware.ts:5:29)
+   9 |   // With Fluid compute, don't put this client in a global environment
+  10 |   // variable. Always create a new one on each request.
+> 11 |   const supabase = createServerClient(
+     |                                    ^
+  12 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  13 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  14 |     {
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (webpack://next/dist/src/server/render.tsx:1263:19)
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (webpack://next/dist/src/server/render.tsx:1263:19)
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. Please report the content of /var/folders/yp/c5wp9_ks719647wztx6n_nw80000gn/T/next-panic-db5cdfe8e87bced087acde08de78c0a.log, along with a description of what you were doing when the error occurred, to https://github.com/vercel/next.js/issues/new?template=1.bug_report.yml
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/render.tsx:1263:19)
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at ShadowPortal (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/components/shadow-portal.tsx:5:32)
+    at DevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/client/components/react-dev-overlay/ui/dev-overlay.tsx:14:3)
+    at ReactDevOverlay (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/dev/next-dev-server.ts:82:10)
+    at div
+    at Body (/Users/jangajdos/Projects/yeezuz2020.store/backend/node_modules/next/src/server/render.tsx:1263:19)
+Error fetching products: {
+  message: 'Invalid API key',
+  hint: 'Double check your Supabase `anon` or `service_role` API key.'
+}

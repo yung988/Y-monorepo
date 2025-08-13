@@ -1,6 +1,6 @@
 packages:
-  - 'Y-backend'
-  - 'Y-frontend'
+  - 'apps/*'
+  - 'packages/*'
 ignoredBuiltDependencies:
   - esbuild
   - sharp

@@ -17,7 +17,7 @@ yarn-error.log*
 .env*
 !.env.example
 
-# Ignore scripts folders (may contain API keys)
-scripts/
-Y-backend/scripts/
-Y-frontend/scripts/
+.turbo
+
+# Vercel local project settings (linked project)
+.vercel

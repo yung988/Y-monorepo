@@ -1,0 +1,11 @@
+# Ignore build and cache artifacts
+.next
+out
+build
+dist
+coverage
+.turbo
+.cache
+.vercel
+**/*.min.js
+**/*.min.css
