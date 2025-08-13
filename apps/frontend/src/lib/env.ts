@@ -13,9 +13,9 @@ export type FrontendEnv = z.infer<typeof EnvSchema>;
 export function getPublicEnv(): FrontendEnv {
   const parsed = EnvSchema.safeParse(process.env);
   if (!parsed.success) {
-    const formatted = parsed.error.errors
-      .map((e) => `${e.path.join(".")}: ${e.message}`)
-      .join("\n");
+    const formatted = parsed.error.issues
+      .map((e: any) => `${e.path.join ? e.path.join('.') : String(e.path)}: ${e.message}`)
+      .join('\n');
     throw new Error(`Missing/invalid NEXT_PUBLIC_* variables for frontend:\n${formatted}`);
   }
   return parsed.data;

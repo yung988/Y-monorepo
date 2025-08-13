@@ -3,7 +3,6 @@
 import { Search } from "lucide-react";
 import Link from "next/link";
 import { CartDropdown } from "@/components/CartDropdown";
-import { Button } from "@/components/ui/button";
 import { usePathname } from "next/navigation";
 
 export function Header() {
@@ -29,11 +28,13 @@ export function Header() {
             {/* Right side buttons */}
             <div className="flex items-center gap-2">
               {/* Search icon (link to home for now) */}
-              <Button asChild variant="ghost" size="sm" aria-label="Hledat">
-                <Link href="/">
-                  <Search className="h-5 w-5" />
-                </Link>
-              </Button>
+              <Link
+                href="/"
+                aria-label="Hledat"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+              >
+                <Search className="h-5 w-5" />
+              </Link>
               {/* Cart Dropdown */}
               <CartDropdown />
             </div>

@@ -12,9 +12,9 @@ yarn-error.log*
 .idea/
 
 # Ignore environment files
-.env
-.env.*
-.env*
+apps/frontend/.env
+apps/backend/.env.local
+apps/backend/.env.local
 !.env.example
 
 .turbo
