@@ -4,7 +4,7 @@ import { MapPin } from "lucide-react";
 import Script from "next/script";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+// Replaced Card components with divs to avoid React type mismatch during build
 
 interface ZasilkovnaPoint {
   id: string;
@@ -89,8 +89,8 @@ export default function ZasilkovnaWidget({
 
       <div className="space-y-4">
         {!selectedPoint ? (
-          <Card>
-            <CardContent className="p-6">
+          <div className="rounded-lg border bg-card text-card-foreground shadow-sm">
+            <div className="p-6">
               <div className="flex items-center justify-between">
                 <div>
                   <h3 className="font-medium">Vyberte výdejní místo</h3>
@@ -109,11 +109,11 @@ export default function ZasilkovnaWidget({
                   Vybrat výdejní místo
                 </Button>
               </div>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
         ) : (
-          <Card className="border-zinc-900">
-            <CardContent className="p-6">
+          <div className="rounded-lg border border-zinc-900 bg-card text-card-foreground shadow-sm">
+            <div className="p-6">
               <div className="flex items-start justify-between">
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-2">
@@ -138,8 +138,8 @@ export default function ZasilkovnaWidget({
                   Změnit
                 </Button>
               </div>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
         )}
       </div>
     </>
