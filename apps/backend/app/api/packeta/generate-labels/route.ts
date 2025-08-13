@@ -1,7 +1,8 @@
+export const runtime = "nodejs";
 import { NextRequest, NextResponse } from "next/server";
 import { generateMultipleLabels } from "@/lib/packeta";
 import { createClient } from "@/utils/supabase/server";
-import { requireAdminOrEditor } from "@/lib/api-auth";
+import { requireAdminOrEditor, requireAdmin } from "@/lib/api-auth";
 
 export async function POST(request: NextRequest) {
   // Admin ochrana
