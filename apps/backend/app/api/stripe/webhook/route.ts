@@ -1,3 +1,4 @@
+export const runtime = "nodejs";
 import { createClient } from "@supabase/supabase-js";
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
@@ -24,7 +25,11 @@ export async function POST(request: NextRequest) {
     const body = await request.text(); // Stripe requires raw body
     event = stripe.webhooks.constructEvent(body, sig!, process.env.STRIPE_WEBHOOK_SECRET!);
   } catch (err: unknown) {
-    console.error("Webhook signature verification failed:", err.message);
+    if (err instanceof Error) {
+      console.error("Webhook signature verification failed:", err.message);
+    } else {
+      console.error("Webhook signature verification failed:", err);
+    }
     return NextResponse.json({ error: "Webhook error" }, { status: 400 });
   }
 
