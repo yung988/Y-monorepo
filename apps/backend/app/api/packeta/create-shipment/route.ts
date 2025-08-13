@@ -4,6 +4,10 @@ import { createPacketaShipment } from "@/lib/packeta";
 import { createClient } from "@/utils/supabase/server";
 import { requireAdminOrEditor } from "@/lib/api-auth";
 
+type Variant = { id: string; weight?: number | null; product_id?: string };
+type Product = { id: string; weight?: number | null };
+type OrderItemRef = { product_id?: string | null; variant_id?: string | null; quantity?: number | null };
+
 export async function POST(request: NextRequest) {
   // Admin ochrana
   const authResult = await requireAdminOrEditor(request);
@@ -52,28 +56,32 @@ export async function POST(request: NextRequest) {
     let finalWeight = Number(weight) || Number(order.total_weight) || 0;
     if (!finalWeight || finalWeight <= 0) {
       try {
-        const { data: items } = await supabase
+        const { data: itemsData } = await supabase
           .from("order_items")
           .select("product_id, variant_id, quantity")
           .eq("order_id", order.id);
+        const items = (itemsData || []) as OrderItemRef[];
 
-        const variantIds = (items || []).map((it: any) => it.variant_id).filter((v: any) => !!v);
-        const productIds = (items || []).map((it: any) => it.product_id).filter((p: any) => !!p);
+        const variantIds = items.map((it) => it.variant_id).filter((v): v is string => !!v);
+        const productIds = items.map((it) => it.product_id).filter((p): p is string => !!p);
 
-        const { data: variants } = variantIds.length
+        const variantsRes = variantIds.length
           ? await supabase.from("product_variants").select("id, weight, product_id").in("id", variantIds)
-          : { data: [] as any[] } as any;
-        const { data: products } = productIds.length
+          : { data: [] as Variant[] } as { data: Variant[] };
+        const productsRes = productIds.length
           ? await supabase.from("products").select("id, weight").in("id", productIds)
-          : { data: [] as any[] } as any;
+          : { data: [] as Product[] } as { data: Product[] };
 
-        const vMap = new Map((variants || []).map((v: any) => [v.id, v]));
-        const pMap = new Map((products || []).map((p: any) => [p.id, p]));
-        for (const it of items || []) {
+        const variants = (variantsRes.data || []) as Variant[];
+        const products = (productsRes.data || []) as Product[];
+
+        const vMap = new Map<string, Variant>(variants.map((v) => [v.id, v]));
+        const pMap = new Map<string, Product>(products.map((p) => [p.id, p]));
+        for (const it of items) {
           const v = it.variant_id ? vMap.get(it.variant_id) : undefined;
           const p = it.product_id ? pMap.get(it.product_id) : undefined;
-          const w = (v?.weight ?? p?.weight ?? 0.25) as number;
-          finalWeight += (Number(w) || 0.25) * (it.quantity || 1);
+          const w = (v?.weight ?? p?.weight ?? 0.25);
+          finalWeight += (Number(w) || 0.25) * (Number(it.quantity) || 1);
         }
       } catch (wErr) {
         console.warn("Failed to compute weight for Packeta, default 1kg:", wErr);
