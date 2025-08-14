@@ -4,9 +4,8 @@ import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 
 // Initialize Stripe
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2025-07-30.basil",
-});
+// Use account's default API version to avoid mismatches
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
 // Initialize Supabase with SERVICE ROLE KEY
 const supabaseService = createClient(
@@ -17,7 +16,7 @@ const supabaseService = createClient(
 export async function OPTIONS(request: NextRequest) {
   const origin = request.headers.get("origin");
 
-  const allowedOrigin = process.env.NEXT_PUBLIC_FRONTEND_URL || "http://localhost:3000";
+  const allowedOrigin = origin || process.env.NEXT_PUBLIC_FRONTEND_URL || "http://localhost:3000";
   return new NextResponse(null, {
     status: 200,
     headers: {
@@ -25,6 +24,7 @@ export async function OPTIONS(request: NextRequest) {
       "Access-Control-Allow-Methods": "POST, OPTIONS",
       "Access-Control-Allow-Headers": "Content-Type, Authorization",
       "Access-Control-Allow-Credentials": "true",
+      "Vary": "Origin",
     },
   });
 }
@@ -84,10 +84,12 @@ export async function POST(request: NextRequest) {
             accessToken: existingOrder.access_token,
           });
 
-          response.headers.set("Access-Control-Allow-Origin", origin || "*");
+          const allowedOrigin = origin || process.env.NEXT_PUBLIC_FRONTEND_URL || "http://localhost:3000";
+          response.headers.set("Access-Control-Allow-Origin", allowedOrigin);
           response.headers.set("Access-Control-Allow-Methods", "POST, OPTIONS");
           response.headers.set("Access-Control-Allow-Headers", "Content-Type, Authorization");
           response.headers.set("Access-Control-Allow-Credentials", "true");
+          response.headers.set("Vary", "Origin");
 
           return response;
         } catch (stripeError) {
@@ -252,11 +254,12 @@ export async function POST(request: NextRequest) {
     });
 
     // Add CORS headers
-    const allowedOrigin = process.env.NEXT_PUBLIC_FRONTEND_URL || "http://localhost:3000";
+    const allowedOrigin = origin || process.env.NEXT_PUBLIC_FRONTEND_URL || "http://localhost:3000";
     response.headers.set("Access-Control-Allow-Origin", allowedOrigin);
     response.headers.set("Access-Control-Allow-Methods", "POST, OPTIONS");
     response.headers.set("Access-Control-Allow-Headers", "Content-Type, Authorization");
     response.headers.set("Access-Control-Allow-Credentials", "true");
+    response.headers.set("Vary", "Origin");
     return response;
   } catch (error: unknown) {
     console.error("Stripe Payment Intent creation failed:", error);

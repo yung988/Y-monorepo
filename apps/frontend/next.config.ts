@@ -65,7 +65,7 @@ export const headers = async () => [
           script-src 'self' 'unsafe-eval' 'unsafe-inline' https://widget.packeta.com https://www.googletagmanager.com https://www.google-analytics.com;
           style-src 'self' 'unsafe-inline' https://widget.packeta.com;
           img-src * blob: data:;
-          connect-src 'self' http://localhost:3000 https://widget.packeta.com https://www.googleapis.com https://jnn-pa.googleapis.com https://api.segment.io https://*.ingest.sentry.io;
+          connect-src 'self' http://localhost:3000 http://localhost:9292 https://widget.packeta.com https://www.googleapis.com https://jnn-pa.googleapis.com https://api.segment.io https://*.ingest.sentry.io;
           frame-src https://widget.packeta.com;
         `
           .replace(/\s{2,}/g, " ")

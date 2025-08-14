@@ -54,7 +54,8 @@ export default async function SuccessPage({
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
   const params = await searchParams;
-  const orderId = Array.isArray(params.order_id) ? params.order_id[0] : (params.order_id ?? null);
+  const orderIdParam = (params.order_id ?? params.orderId) as string | string[] | undefined;
+  const orderId = Array.isArray(orderIdParam) ? orderIdParam[0] : (orderIdParam ?? null);
   const accessToken = Array.isArray(params.token) ? params.token[0] : (params.token ?? null);
 
   if (!orderId) {

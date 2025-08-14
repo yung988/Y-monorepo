@@ -5,8 +5,8 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import ZasilkovnaWidget from "@/components/checkout/ZasilkovnaWidget";
-import StripePaymentElement from "@/components/StripePaymentElement";
 import { useCart } from "@/context/CartContext";
+import { adminApi } from "@/lib/admin-api";
 
 // Import the ZasilkovnaPoint type from the widget
 interface ZasilkovnaPoint {
@@ -613,18 +613,45 @@ function CheckoutForm() {
                 <div className="pt-6">
                   <h2 className="text-xs font-medium tracking-wide uppercase mb-6">Platba</h2>
 
-                  <StripePaymentElement
-                    billingData={{
-                      email: formData.email,
-                      firstName: formData.firstName,
-                      lastName: formData.lastName,
-                      phone: formData.phone,
-                      street: formData.street,
-                      city: formData.city,
-                      postalCode: formData.postalCode,
+                  <button
+                    type="button"
+                    className="w-full bg-black text-white p-3 text-xs font-medium tracking-wide hover:bg-gray-900 transition-colors disabled:bg-zinc-300 disabled:text-zinc-500 uppercase"
+                    onClick={async () => {
+                      try {
+                        const resp = await adminApi.createCheckout({
+                          items: items.map((it) => ({
+                            productId: it.productId,
+                            variantId: it.variantId,
+                            quantity: it.quantity,
+                          })),
+                          shipping: {
+                            email: formData.email,
+                            name: `${formData.firstName} ${formData.lastName}`.trim(),
+                            address: formData.street,
+                            city: formData.city,
+                            postalCode: formData.postalCode,
+                            country: formData.country || "CZ",
+                            phone: formData.phone,
+                          },
+                          totalCents: total * 100,
+                          shippingCents: deliveryPrice * 100,
+                          zasilkovnaPointId: selectedPickupPoint.id,
+                          zasilkovnaPointName: selectedPickupPoint.name,
+                        });
+                        const url = resp.url || resp.checkout_url;
+                        if (url) {
+                          // Tip: před redirectem můžeme uložit případný state
+                          window.location.href = url;
+                        } else {
+                          alert("Nepodařilo se vytvořit checkout session");
+                        }
+                      } catch (e: any) {
+                        alert(e?.message || "Chyba při vytváření checkoutu");
+                      }
                     }}
-                    pickupPoint={selectedPickupPoint}
-                  />
+                  >
+                    Zaplatit
+                  </button>
 
                   <p className="text-[9px] mt-4 leading-tight text-gray-600">
                     Odesláním platby souhlasíte s našimi obchodními podmínkami a zásadami ochrany
